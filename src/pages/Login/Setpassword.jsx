@@ -5,7 +5,7 @@ import rightImg from "../../assest/img.png";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 
-const Login = () => {
+const Setpassword = () => {
     const [showPassword, setShowPassword] = useState(false);
     const navigate = useNavigate()
     return (
@@ -17,16 +17,11 @@ const Login = () => {
                     <h6 className="logo-title">Digital Benchers</h6>
                 </div>
                 <div className="login-content">
-                    <h5>Welcome Back 👋</h5>
-                    <p>We are happy to have you back</p>
+                    <h5>Set your password </h5>
 
                     <form className="login-form">
                         <div className="input-group">
-                            <label htmlFor="email">Email address*</label>
-                            <input type="email" id="email" placeholder="Enter your email" required />
-                        </div>
-                        <div className="input-group">
-                            <label htmlFor="password">Password*</label>
+                            <label htmlFor="password">Create password*</label>
                             <div className="password-container">
                                 <input
                                     type={showPassword ? "text" : "password"}
@@ -42,8 +37,24 @@ const Login = () => {
                                 </span>
                             </div>
                         </div>
-                        <span className="forgot-password" onClick={()=>navigate('/forgot-password')}>Forgot Password?</span>
-                        <button type="submit" className="login-btn">Login</button>
+                        <div className="input-group">
+                            <label htmlFor="password">Re-enter password*</label>
+                            <div className="password-container">
+                                <input
+                                    type={showPassword ? "text" : "password"}
+                                    id="password"
+                                    placeholder="Enter your password"
+                                    required
+                                />
+                                <span
+                                    className="toggle-password"
+                                    onClick={() => setShowPassword(!showPassword)}
+                                >
+                                    {showPassword ? <FaEye size={20} /> : <FaEyeSlash size={20} />}
+                                </span>
+                            </div>
+                        </div>
+                        <button type="submit" className="login-btn" onClick={() => navigate('/')}>Set password</button>
                     </form>
                 </div>
             </div>
@@ -56,4 +67,4 @@ const Login = () => {
     );
 };
 
-export default Login;
+export default Setpassword;
