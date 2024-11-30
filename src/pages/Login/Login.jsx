@@ -23,7 +23,7 @@ const Login = () => {
                     <form className="login-form">
                         <div className="input-group">
                             <label htmlFor="email">Email address*</label>
-                            <input type="email" id="email" placeholder="Enter your email" required />
+                            <input type="email" id="email" placeholder="Enter your email"  />
                         </div>
                         <div className="input-group">
                             <label htmlFor="password">Password*</label>
@@ -32,7 +32,6 @@ const Login = () => {
                                     type={showPassword ? "text" : "password"}
                                     id="password"
                                     placeholder="Enter your password"
-                                    required
                                 />
                                 <span
                                     className="toggle-password"
@@ -43,7 +42,7 @@ const Login = () => {
                             </div>
                         </div>
                         <span className="forgot-password" onClick={()=>navigate('/forgot-password')}>Forgot Password?</span>
-                        <button type="submit" className="login-btn">Login</button>
+                        <button type="submit" className="login-btn" onClick={()=>navigate('/dashboard')}>Login</button>
                     </form>
                 </div>
             </div>

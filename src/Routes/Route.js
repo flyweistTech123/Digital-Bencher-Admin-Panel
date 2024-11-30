@@ -1,5 +1,6 @@
 /** @format */
 
+import Dashboard from "../pages/Dashboard/Dashboard.jsx";
 import ForgotPassword from "../pages/Login/ForgotPassword.jsx";
 import Login from "../pages/Login/Login.jsx";
 import OTP from "../pages/Login/OTP.jsx";
@@ -23,6 +24,10 @@ const allRoutes = [
     {
         route: "/forgot-password/otp/set-password",
         component: <Setpassword />,
+    },
+    {
+        route: "/dashboard",
+        component: <Dashboard />,
     },
 ];
 
