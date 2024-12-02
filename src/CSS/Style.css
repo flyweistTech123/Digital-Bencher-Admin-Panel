@@ -1,0 +1,342 @@
+.dashboardcontainer {}
+
+
+.dashboardcontainer-header {}
+
+.dashboardcontainer-header h6 {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29.05px;
+    color: #464255;
+    margin: 0;
+}
+
+.dashboardcontainer-header p {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19.36px;
+    color: #A3A3A3;
+    margin: 0;
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.2rem;
+}
+
+.dashboardcontainer-header span {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19.36px;
+    color: #608FF7;
+    margin: 0;
+}
+
+.dashboardmain {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.6rem;
+    margin-top: 2rem;
+}
+
+.dashboardcontent {
+    width: auto;
+    height: 96px;
+    border-radius: 15px;
+    background: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    cursor: pointer;
+}
+
+
+
+
+.dashboardcontent svg {
+    font-size: 20px;
+    color: #464255;
+}
+
+.dashboardcontent h6 {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19.36px;
+    color: #464255;
+    margin: 0;
+}
+
+.dashboardcontent:hover h6,
+.dashboardcontent:hover svg {
+    color: #608FF7;
+
+}
+
+.dashboardcontent:hover {
+    transform: translateY(-5px);
+}
+
+
+.link:hover {
+    text-decoration: none;
+}
+
+.homepagecontent {
+    margin-top: 2rem;
+}
+
+.homepagecontent-top {
+    display: flex;
+    gap: 2rem;
+}
+
+.homepagecontent-bottom {
+    margin-top: 2rem;
+}
+
+.homepagecontent-left {
+    width: auto;
+    height: auto;
+    border-radius: 15px;
+    background: #FFFFFF;
+    padding: 1rem;
+    flex: 2;
+}
+
+.homepagecontent-left-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.homepagecontent-left-header h6 {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 19.36px;
+    color: #464255;
+    margin: 0;
+}
+
+.homepagecontent-left-header svg {
+    font-size: 25px;
+    color: #608FF7;
+}
+
+
+.homepagecontent-left-table {
+    width: 100%;
+    margin-top: 1.5rem;
+}
+
+.homepagecontent-left-table table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+
+.homepagecontent-left-table table thead th {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19.36px;
+    color: #A3A3A3;
+    margin: 0;
+    text-align: center;
+}
+
+.homepagecontent-left-table table tbody td {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19.36px;
+    color: #A3A3A3;
+    margin: 0;
+    text-align: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 1rem;
+}
+
+
+
+.addimage {
+    width: auto;
+    height: 100px;
+    border-radius: 7px;
+    background: #F5F7FA;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.addimage svg {
+    font-size: 25px;
+    color: #8BA3CB;
+    cursor: pointer;
+}
+
+.totalorders {
+    width: auto;
+    height: 48px;
+    padding: 0px 20px 0px 20px;
+    border-radius: 10px;
+    border: 1px solid #D9D9D9;
+    background: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.totalorders span {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #3E3E45;
+    margin: 0;
+}
+
+.actiontable {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.actiontable svg {
+    color: #000000;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+
+
+.studyplanner-container {
+    width: auto;
+    height: auto;
+    border-radius: 15px;
+    background: #FFFFFF;
+    padding: 1rem;
+    padding-bottom: 5rem;
+    flex: 2;
+}
+
+.studyplanner-image {
+    width: auto;
+    height: 209px;
+    border-radius: 7px;
+    background: #F5F7FA;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.studyplanner-image svg {
+    font-size: 80px;
+    color: #8BA3CB;
+}
+
+.studyplanner-center-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1.5rem;
+}
+
+.studyplanner-center-header h6 {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 19.36px;
+    color: #464255;
+    margin: 0;
+}
+
+.studyplanner-center-header svg {
+    font-size: 25px;
+    color: #608FF7;
+}
+
+.studyplanner-exams {
+    margin-top: 1.5rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1.6rem;
+}
+
+.studyplanner-exam {
+    width: auto;
+    height: 78px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background: #FFFFFF;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding-left: 1rem;
+}
+
+.studyplanner-exam h6 {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #000000;
+    margin: 0;
+}
+
+.aboutexam-container {
+    margin-top: 1rem;
+}
+
+.aboutexam-container p {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19.36px;
+    color: #A3A3A3;
+    margin: 0;
+}
+
+.aboutexam-container-box {
+    width: 154px;
+    height: 48px;
+    padding: 0px 10px 0px 10px;
+    border-radius: 10px;
+    border: 1px;
+    background: #FFFFFF;
+    border: 1px solid #D9D9D9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.aboutexam-container-box span {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #000000;
+    margin: 0;
+}
+
+.aboutexam-container-main{
+    margin-top: 1rem;
+}
+
+.aboutexam-divs{
+    border-bottom: 2px solid #D9D9D9;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.aboutexam-divs h6{
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #6090F7;
+    margin: 0;
+}
+.aboutexam-divs p{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: #838080;
+    margin: 0;
+    margin-top: 0.5rem;   
+}

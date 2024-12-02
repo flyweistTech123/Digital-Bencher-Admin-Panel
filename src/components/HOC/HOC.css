@@ -20,7 +20,6 @@
 
 .child-component {
     transition: width 0.3s ease;
-    margin-top: 1rem;
     padding: 20px;
 }
 
