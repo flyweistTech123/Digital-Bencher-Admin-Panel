@@ -42,7 +42,7 @@ const Dashboard = () => {
                             <h6>About Exam Page Content</h6>
                         </div>
                     </Link>
-                    <Link to={'/dashboard/homepage-content'} className='link'>
+                    <Link to={'/dashboard/course-page'} className='link'>
                         <div className='dashboardcontent'>
                             <MdGolfCourse />
                             <h6>Course Page Content</h6>
@@ -54,7 +54,7 @@ const Dashboard = () => {
                             <h6>Test with video Page Content</h6>
                         </div>
                     </Link>
-                    <Link to={'/dashboard/homepage-content'} className='link'>
+                    <Link to={'/dashboard/handwritten-notes'} className='link'>
                         <div className='dashboardcontent'>
                             <PiBookFill />
                             <h6>Handwritten Notes Page Content</h6>

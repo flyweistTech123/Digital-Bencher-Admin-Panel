@@ -1,7 +1,9 @@
 /** @format */
 
 import AboutExam from "../pages/Dashboard/AboutExam.jsx";
+import CoursePageContent from "../pages/Dashboard/CoursePageContent.jsx";
 import Dashboard from "../pages/Dashboard/Dashboard.jsx";
+import HandwrittenNotes from "../pages/Dashboard/HandwrittenNotes.jsx";
 import HomePageContent from "../pages/Dashboard/HomePageContent.jsx";
 import StudyPlannerAI from "../pages/Dashboard/StudyPlannerAI.jsx";
 import ForgotPassword from "../pages/Login/ForgotPassword.jsx";
@@ -43,6 +45,14 @@ const allRoutes = [
     {
         route: "/dashboard/about-exam",
         component: <AboutExam />,
+    },
+    {
+        route: "/dashboard/course-page",
+        component: <CoursePageContent />,
+    },
+    {
+        route: "/dashboard/handwritten-notes",
+        component: <HandwrittenNotes />,
     },
 ];
 
