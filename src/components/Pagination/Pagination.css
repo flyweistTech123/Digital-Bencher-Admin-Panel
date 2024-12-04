@@ -1,6 +1,8 @@
 .paginationcontainer {
     display: flex;
-    /* align-items: center; */
+    gap: 0.5rem;
+    align-items: center;
+    margin-top: 1rem;
 }
 
 .pagination-div-disable {
@@ -27,21 +29,24 @@
 
 
 .pagination-div {
-
     border-radius: 8px;
     border: 1px solid #CED4DA;
     background: #FFFFFF;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 10px;
-
+    padding: 8px 12px 8px 12px;
 }
 
-.pagination-div-limit {}
+.pagination-div-limit {
+    display: flex;
+    align-items: center;    
+    gap: 0.3rem;
+}
 
 .pagination-div-limit select {
     padding: 10px;
+    padding-right: 2rem;
     border-radius: 8px;
     border: 1px solid #CED4DA;
     outline: none;

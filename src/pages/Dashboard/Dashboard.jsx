@@ -66,7 +66,7 @@ const Dashboard = () => {
                             <h6>PYQ’s with videos Page Content</h6>
                         </div>
                     </Link>
-                    <Link to={'/dashboard/homepage-content'} className='link'>
+                    <Link to={'/dashboard/community'} className='link'>
                         <div className='dashboardcontent'>
                             <MdHandshake />
                             <h6>Community Page Content</h6>
@@ -78,13 +78,13 @@ const Dashboard = () => {
                             <h6>Capsule course Page Content</h6>
                         </div>
                     </Link>
-                    <Link to={'/dashboard/homepage-content'} className='link'>
+                    <Link to={'/dashboard/skills'} className='link'>
                         <div className='dashboardcontent'>
                             <FaFireFlameCurved />
                             <h6>Skills Page Content</h6>
                         </div>
                     </Link>
-                    <Link to={'/dashboard/homepage-content'} className='link'>
+                    <Link to={'/dashboard/current-affairs'} className='link'>
                         <div className='dashboardcontent'>
                             <BiSolidNews />
                             <h6>Current Affairs Page Content</h6>

@@ -12,21 +12,21 @@ import { AiOutlineDelete } from "react-icons/ai";
 import Pagination from '../../components/Pagination/Pagination';
 
 
-const HandwrittenNotes = () => {
+const SkillsPage = () => {
     const navigate = useNavigate()
 
     return (
         <>
             <div className='dashboardcontainer'>
                 <div className='dashboardcontainer-header'>
-                    <h6>Handwritten Notes Page Content</h6>
+                    <h6>Skills Page Content</h6>
                     <p>
                         <GoArrowLeft
                             size={25}
                             style={{ cursor: 'pointer' }}
                             onClick={() => navigate(-1)}
                         />
-                        Dashboard /<span>  Handwritten Notes</span>
+                        Dashboard /<span>  Skills</span>
                     </p>
                 </div>
                 <div className='homepagecontent'>
@@ -50,10 +50,10 @@ const HandwrittenNotes = () => {
                 </div>
                 <div className='handwrittennotes-list'>
                     <div className='handwrittennotes-list-header'>
-                        <Link to={'/dashboard/handwritten-notes/add-handwritten-notes'} className='link'>
+                        <Link to={'/dashboard/skills/add-skill'} className='link'>
                             <div className='handwrittennotes-add'>
                                 <FaPlus />
-                                <h6>Add NEW Notes</h6>
+                                <h6>Add NEW skill</h6>
                             </div>
                         </Link>
                         <div className='handwrittennotes-search'>
@@ -68,20 +68,20 @@ const HandwrittenNotes = () => {
                         <table>
                             <thead>
                                 <tr>
-                                    <th>Notes Name</th>
-                                    <th>Toppers Name</th>
-                                    <th>Pages count</th>
-                                    <th>Sub Topic Count</th>
+                                    <th>Skill Name</th>
+                                    <th>Level</th>
+                                    <th>Duration ( Hrs )</th>
+                                    <th>Include Course</th>
                                     <th>Rating</th>
                                     <th></th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td>GATE SCA Digital Logic</td>
-                                    <td>Chandra Kanth</td>
-                                    <td>12 pages</td>
-                                    <td>16 sub topics</td>
+                                    <td>UI/UX Design</td>
+                                    <td>CEFR Level -1</td>
+                                    <td>22 hrs</td>
+                                    <td>Includes 69 Courses</td>
                                     <td>★★★★☆</td>
                                     <td>
                                         <div className='handwrittennotes-table-icons'>
@@ -98,10 +98,10 @@ const HandwrittenNotes = () => {
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td>GATE SCA Digital Logic</td>
-                                    <td>Chandra Kanth</td>
-                                    <td>12 pages</td>
-                                    <td>16 sub topics</td>
+                                    <td>UI/UX Design</td>
+                                    <td>CEFR Level -1</td>
+                                    <td>22 hrs</td>
+                                    <td>Includes 69 Courses</td>
                                     <td>★★★★☆</td>
                                     <td>
                                         <div className='handwrittennotes-table-icons'>
@@ -127,4 +127,4 @@ const HandwrittenNotes = () => {
     )
 }
 
-export default HOC(HandwrittenNotes)
+export default HOC(SkillsPage)
