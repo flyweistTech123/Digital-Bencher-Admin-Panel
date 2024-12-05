@@ -1,5 +1,6 @@
 /** @format */
 
+import Chapters from "../pages/Chapters/Chapters.jsx";
 import AboutExam from "../pages/Dashboard/AboutExam.jsx";
 import AddHandwrittenNotes from "../pages/Dashboard/AddHandwrittenNotes.jsx";
 import AddSkill from "../pages/Dashboard/AddSkill.jsx";
@@ -11,10 +12,17 @@ import HandwrittenNotes from "../pages/Dashboard/HandwrittenNotes.jsx";
 import HomePageContent from "../pages/Dashboard/HomePageContent.jsx";
 import SkillsPage from "../pages/Dashboard/SkillsPage.jsx";
 import StudyPlannerAI from "../pages/Dashboard/StudyPlannerAI.jsx";
+import Educator from "../pages/Educator/Educator.jsx";
+import Employees from "../pages/Employees/Employees.jsx";
+import GoalExams from "../pages/Goal Exams/GoalExams.jsx";
 import ForgotPassword from "../pages/Login/ForgotPassword.jsx";
 import Login from "../pages/Login/Login.jsx";
 import OTP from "../pages/Login/OTP.jsx";
 import Setpassword from "../pages/Login/Setpassword.jsx";
+import Students from "../pages/Students/Students.jsx";
+import Subjects from "../pages/Subjects/Subjects.jsx";
+import Topics from "../pages/Topics/Topics.jsx";
+import Vods from "../pages/Vods/Vods.jsx";
 
 
 
@@ -78,6 +86,38 @@ const allRoutes = [
     {
         route: "/dashboard/current-affairs",
         component: <CurrentAffairs />,
+    },
+    {
+        route: "/students",
+        component: <Students />,
+    },
+    {
+        route: "/employees",
+        component: <Employees />,
+    },
+    {
+        route: "/goalexams",
+        component: <GoalExams />,
+    },
+    {
+        route: "/educator",
+        component: <Educator />,
+    },
+    {
+        route: "/subjects",
+        component: <Subjects />,
+    },
+    {
+        route: "/chapters",
+        component: <Chapters />,
+    },
+    {
+        route: "/topics",
+        component: <Topics />,
+    },
+    {
+        route: "/vods",
+        component: <Vods />,
     },
 ];
 

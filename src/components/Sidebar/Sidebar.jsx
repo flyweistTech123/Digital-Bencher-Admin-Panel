@@ -33,17 +33,17 @@ const Sidebar = () => {
         {
             name: "Students",
             icon: <PiStudentBold />,
-            link: "/partnerlists",
+            link: "/students",
         },
         {
             name: "Employees",
             icon: <FaUserTie />,
-            link: "/allbookings",
+            link: "/employees",
         },
         {
             name: "Educator",
             icon: <FaUserTie />,
-            link: "/banner-Management",
+            link: "/educator",
         },
         {
             name: "Concept Mapping",
@@ -53,27 +53,27 @@ const Sidebar = () => {
         {
             name: "Goal Exams",
             icon: <PiExamBold />,
-            link: "/wallet",
+            link: "/goalexams",
         },
         {
             name: "Subjects",
             icon: <FaRegListAlt />,
-            link: "/monthlysubscription",
+            link: "/subjects",
         },
         {
             name: "Chapters",
             icon: <FaRegCalendar />,
-            link: "/referral-history/user",
+            link: "/chapters",
         },
         {
             name: "Topics",
             icon: <FiBookOpen />,
-            link: "/banners",
+            link: "/topics",
         },
         {
             name: "Vods",
             icon: <RiVideoLine />,
-            link: "/timesheet-Management",
+            link: "/vods",
         },
         {
             name: "Course Type",

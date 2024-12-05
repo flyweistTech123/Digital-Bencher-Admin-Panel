@@ -4,9 +4,7 @@ import HOC from '../../components/HOC/HOC'
 import { GoArrowLeft } from "react-icons/go";
 import { useNavigate } from 'react-router-dom';
 import { IoImageOutline } from "react-icons/io5";
-import { AiFillPlusCircle } from "react-icons/ai";
-import { IoEyeOutline } from "react-icons/io5";
-import { AiTwotoneEdit } from "react-icons/ai";
+
 
 
 
