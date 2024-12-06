@@ -6,9 +6,10 @@
 }
 
 .sidebar55 {
-    max-width: 18%;
+    width: 19%;
     flex: 0 0 auto;
     transition: width 0.3s ease;
+    max-width: 300px;
 }
 
 .content {

@@ -19,9 +19,14 @@ import ForgotPassword from "../pages/Login/ForgotPassword.jsx";
 import Login from "../pages/Login/Login.jsx";
 import OTP from "../pages/Login/OTP.jsx";
 import Setpassword from "../pages/Login/Setpassword.jsx";
+import Quizapp from "../pages/Quiz app/Quizapp.jsx";
+import Ratings from "../pages/Ratings/Ratings.jsx";
+import Studentarea from "../pages/Student area/Studentarea.jsx";
 import Students from "../pages/Students/Students.jsx";
+import StudyPlanner from "../pages/Study Planner/StudyPlanner.jsx";
 import Subjects from "../pages/Subjects/Subjects.jsx";
 import Topics from "../pages/Topics/Topics.jsx";
+import VideoPlayer from "../pages/Video Player/VideoPlayer.jsx";
 import Vods from "../pages/Vods/Vods.jsx";
 
 
@@ -118,6 +123,26 @@ const allRoutes = [
     {
         route: "/vods",
         component: <Vods />,
+    },
+    {
+        route: "/ratings",
+        component: <Ratings />,
+    },
+    {
+        route: "/quizapp",
+        component: <Quizapp />,
+    },
+    {
+        route: "/student-area",
+        component: <Studentarea />,
+    },
+    {
+        route: "/study-planner",
+        component: <StudyPlanner />,
+    },
+    {
+        route: "/video-player",
+        component: <VideoPlayer />,
     },
 ];
 

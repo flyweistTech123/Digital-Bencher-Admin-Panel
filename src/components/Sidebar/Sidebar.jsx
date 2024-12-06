@@ -88,27 +88,27 @@ const Sidebar = () => {
         {
             name: "Quiz app",
             icon: <MdOutlineQuiz />,
-            link: "/live-chat",
+            link: "/quizapp",
         },
         {
             name: "Student area",
             icon: <BsChatLeftDots />,
-            link: "/help-support",
+            link: "/student-area",
         },
         {
             name: "Study Planner",
             icon: <CgNotes />,
-            link: "/subadmin",
+            link: "/study-planner",
         },
         {
             name: "Video Player",
             icon: <PiVideoFill />,
-            link: "/subadmin",
+            link: "/video-player",
         },
         {
             name: "Ratings",
             icon: <FaRegStar />,
-            link: "/subadmin",
+            link: "/ratings",
         },
     ];
 

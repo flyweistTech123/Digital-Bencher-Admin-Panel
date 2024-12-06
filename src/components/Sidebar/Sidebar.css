@@ -1,12 +1,10 @@
 .sidebarcontainer {
     width: auto;
-    max-width: 250px;
     height: auto;
     background: #FFFFFF;
     border-right: 1px solid #EDEEF3;
     border-bottom: 1px solid #EDEEF3;
     padding: 1rem;
-    /* padding-top: 0;  */
 }
 
 
@@ -48,8 +46,12 @@
     padding: 12px 16px 12px 16px;
     text-decoration: none;
     border: 2px solid #608FF7;
+    margin-top: 0.5rem;
 }
 
+.sideitemactive:hover{
+    text-decoration: none;
+}
 
 
 .sideitemactive svg {
