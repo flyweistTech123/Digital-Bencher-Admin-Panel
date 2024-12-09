@@ -1,6 +1,7 @@
 /** @format */
 
 import Chapters from "../pages/Chapters/Chapters.jsx";
+import Courses from "../pages/Courses/Courses.jsx";
 import AboutExam from "../pages/Dashboard/AboutExam.jsx";
 import AddHandwrittenNotes from "../pages/Dashboard/AddHandwrittenNotes.jsx";
 import AddSkill from "../pages/Dashboard/AddSkill.jsx";
@@ -143,6 +144,10 @@ const allRoutes = [
     {
         route: "/video-player",
         component: <VideoPlayer />,
+    },
+    {
+        route: "/dashboard/course-page/courses",
+        component: <Courses />,
     },
 ];
 

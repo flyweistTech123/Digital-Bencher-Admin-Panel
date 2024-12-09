@@ -4,6 +4,9 @@ import HOC from '../../components/HOC/HOC'
 import { GoArrowLeft } from "react-icons/go";
 import { useNavigate } from 'react-router-dom';
 import { IoImageOutline } from "react-icons/io5";
+import { AiFillPlusCircle } from "react-icons/ai";
+import { MdOutlineRemoveRedEye } from "react-icons/md";
+import { AiFillEdit } from "react-icons/ai";
 
 
 
@@ -99,10 +102,145 @@ const AddHandwrittenNotes = () => {
                             </div>
                         </div>
                     </div>
-                    <div className='studyplanner-container' style={{ marginTop: "20px" }}>
-                        <div className='addhandwrittennotes-goal-main'>
-
+                </div>
+                <div className='handwrittennotes-list'>
+                    <div className='studyplanner-container'>
+                        <div className='addhandwritten-inputs'>
+                            <div className='addhandwritten-input-two-div'>
+                                <div className='addhandwritten-input'>
+                                    <h6>Goal Exam<span>*</span></h6>
+                                    <div className='addhandwritten-inputs-div'>
+                                        <div className="input-container">
+                                            <select name="" id="">
+                                                <option value=""></option>
+                                            </select>
+                                            <label htmlFor="">Select Goal Exam</label>
+                                        </div>
+                                        <div className='addhandwritten-inputs-icons'>
+                                            <AiFillPlusCircle />
+                                            <MdOutlineRemoveRedEye />
+                                            <AiFillEdit />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className='addhandwritten-input-two-div'>
+                                <div className='addhandwritten-input'>
+                                    <h6>Subject<span>*</span></h6>
+                                    <div className='addhandwritten-inputs-div'>
+                                        <div className="input-container">
+                                            <select name="" id="">
+                                                <option value=""></option>
+                                            </select>
+                                            <label htmlFor="">Select Subject</label>
+                                        </div>
+                                        <div className='addhandwritten-inputs-icons'>
+                                            <AiFillPlusCircle />
+                                            <MdOutlineRemoveRedEye />
+                                            <AiFillEdit />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className='addhandwritten-input'>
+                                    <h6>Sub Subjects (Optional)</h6>
+                                    <div className='addhandwritten-inputs-div'>
+                                        <div className="input-container">
+                                            <input type="text" />
+                                            <label htmlFor="">Enter sub subject</label>
+                                        </div>
+                                        <div className='addhandwritten-inputs-icons'>
+                                            <AiFillPlusCircle />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className='addhandwritten-input-two-div'>
+                                <div className='addhandwritten-input'>
+                                    <h6>Chapter</h6>
+                                    <div className='addhandwritten-inputs-div'>
+                                        <div className="input-container">
+                                            <select name="" id="">
+                                                <option value=""></option>
+                                            </select>
+                                            <label htmlFor="">Select Chapter</label>
+                                        </div>
+                                        <div className='addhandwritten-inputs-icons'>
+                                            {/* <AiFillPlusCircle />
+                                            <MdOutlineRemoveRedEye />
+                                            <AiFillEdit /> */}
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className='addhandwritten-input'>
+                                    <h6>Topic Name</h6>
+                                    <div className='addhandwritten-inputs-div'>
+                                        <div className="input-container">
+                                            <select name="" id="">
+                                                <option value=""></option>
+                                            </select>
+                                            <label htmlFor="">Enter Topic Name</label>
+                                        </div>
+                                        <div className='addhandwritten-inputs-icons'>
+                                            {/* <AiFillPlusCircle /> */}
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className='addhandwritten-input-two-div'>
+                                <div className='addhandwritten-input'>
+                                    <h6>Handwritten Notes Name</h6>
+                                    <div className='addhandwritten-inputs-div'>
+                                        <div className="input-container">
+                                            <input type="text" />
+                                            <label htmlFor="">Enter Name here</label>
+                                        </div>
+                                        <div className='addhandwritten-inputs-icons'>
+                                            {/* <AiFillPlusCircle />
+                                            <MdOutlineRemoveRedEye />
+                                            <AiFillEdit /> */}
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className='addhandwritten-input'>
+                                    <h6>Duration of the Video</h6>
+                                    <div className='addhandwritten-inputs-div'>
+                                        <div className="input-container">
+                                            <input type="text" name="" id="" />
+                                            <label htmlFor="">Enter duration (hrs)</label>
+                                        </div>
+                                        <div className='addhandwritten-inputs-icons'>
+                                            <AiFillPlusCircle />
+                                            <MdOutlineRemoveRedEye />
+                                            <AiFillEdit />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className='addhandwritten-input-two-div'>
+                                <div className='addhandwritten-input'>
+                                    <h6>Upload handwritten notes (Pdf)</h6>
+                                    <div className='addhandwritten-inputs-div'>
+                                        <div className="input-container">
+                                            <input type="text" />
+                                            <label htmlFor="">Upload notes here(Drag & Drop)</label>
+                                        </div>
+                                        <div className='addhandwritten-inputs-icons'>
+                                            {/* <AiFillPlusCircle />
+                                            <MdOutlineRemoveRedEye />
+                                            <AiFillEdit /> */}
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
+                    </div>
+                </div>
+                <div className='addhandwritennotes-submit'>
+                    <div className='handwritten-button'>
+                        <button onClick={()=>navigate('/dashboard/handwritten-notes')}>Submit</button>
+                    </div>
+                    <div className='handwritten-button-addnote'>
+                        <button onClick={()=>navigate('/vods')}>Add Notes</button>
                     </div>
                 </div>
             </div>

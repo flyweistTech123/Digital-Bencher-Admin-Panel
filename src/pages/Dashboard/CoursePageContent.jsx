@@ -24,7 +24,7 @@ const CoursePageContent = () => {
                             style={{ cursor: 'pointer' }}
                             onClick={() => navigate(-1)}
                         />
-                        Dashboard /<span> Course</span>
+                        Dashboard /<span> Courses Page</span>
                     </p>
                 </div>
                 <div className='homepagecontent'>
@@ -96,7 +96,7 @@ const CoursePageContent = () => {
                             </div>
                         </div>
                     </div>
-                    <Link to={'/dashboard/course-page'} className='link'>
+                    <Link to={'/dashboard/course-page/courses'} className='link'>
                         <div className='coursepageContent-div'>
                             <MdGolfCourse />
                             <h6>Courses</h6>

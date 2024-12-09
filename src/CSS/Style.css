@@ -214,7 +214,7 @@
     border-radius: 15px;
     background: #FFFFFF;
     padding: 1rem;
-    padding-bottom: 5rem;
+    /* padding-bottom: 5rem; */
     flex: 2;
 }
 
@@ -415,42 +415,26 @@
 .handwritten-button button {
     width: auto;
     height: auto;
-    padding: 10px 20px 10px 20px;
-    border-radius: 5px;
+    padding: 0.625rem 1.25rem;
+    border-radius: 0.3125rem;
     border: none;
     outline: none;
     background-color: #0572F3;
     font-weight: 400;
-    font-size: 16px;
-    line-height: 19.36px;
+    font-size: 1rem; 
+    line-height: 1.2;  
     color: #FFFFFF;
     margin: 0;
     cursor: pointer;
-    position: relative;
-    overflow: hidden;
+    transition: background-color 0.3s ease-in-out, transform 0.2s ease; /* Smooth effects */
 }
 
-.handwritten-button button:hover::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(255, 255, 255, 0.4);
-    pointer-events: none;
-    transition: background-color 0.3s ease;
+.handwritten-button button:hover{
+    background-color: #608FF7;
 }
-
-.handwritten-button button::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: transparent;
-    transition: background-color 0.3s ease;
+.handwritten-button button:focus {
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5); /* Outline for focus */
+    outline: none;
 }
 
 .handwrittennotes-list {
@@ -639,6 +623,7 @@
     border-radius: 8px;
     border: 2px solid #262E3D99;
     position: relative;
+    flex: 1;
 }
 
 .input-container input {
@@ -670,6 +655,25 @@
 
 .input-container input:focus+label,
 .input-container input:not(:placeholder-shown)+label {
+    top: -10px;
+    font-weight: 400;
+    font-size: 16px;
+    color: #545454;
+}
+
+.input-container select{
+    width: 95%;
+    height: 100%;
+    padding-left: 16px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    outline: none;
+    position: relative;
+}
+
+.input-container select:focus+label,
+.input-container select:not(:placeholder-shown)+label {
     top: -10px;
     font-weight: 400;
     font-size: 16px;
@@ -891,4 +895,94 @@
     align-items: center;
     justify-content: center;
     margin-top: 2rem;
+}
+
+.addhandwritten-inputs{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+
+.addhandwritten-input{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 50%;
+}
+
+.addhandwritten-input h6{
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 12px;
+    letter-spacing: 0.0015em;
+    color: #464255;
+    margin: 0;
+}
+
+.addhandwritten-input span{
+    color: #D43A3A;
+}
+
+.addhandwritten-inputs-div{
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+
+.addhandwritten-inputs-icons{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    width: 20%;
+}
+
+.addhandwritten-inputs-icons svg{
+    color: #262E3D99;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+
+.addhandwritten-input-two-div{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+
+.addhandwritennotes-submit{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    gap: 1rem;
+}
+
+
+.handwritten-button-addnote button {
+    width: auto;
+    height: auto;
+    padding: 10px 20px 10px 20px;
+    border-radius: 5px;
+    border: 1px solid #0572F3;
+    outline: none;
+    background-color: transparent;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19.36px;
+    color: #0572F3;
+    margin: 0;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, transform 0.2s ease; 
+}
+
+.handwritten-button-addnote button:hover{
+    background-color: #608FF7;
+}
+.handwritten-button-addnote button:focus {
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5); /* Outline for focus */
+    outline: none;
 }
