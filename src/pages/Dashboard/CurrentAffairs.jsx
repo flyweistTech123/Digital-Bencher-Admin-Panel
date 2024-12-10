@@ -4,12 +4,6 @@ import HOC from '../../components/HOC/HOC'
 import { GoArrowLeft } from "react-icons/go";
 import { Link, useNavigate } from 'react-router-dom';
 import { IoImageOutline } from "react-icons/io5";
-import { FaPlus } from "react-icons/fa6";
-import { IoSearch } from "react-icons/io5";
-import { MdArrowOutward } from "react-icons/md";
-import { FiEdit3 } from "react-icons/fi";
-import { AiOutlineDelete } from "react-icons/ai";
-import Pagination from '../../components/Pagination/Pagination';
 import { IoNewspaperSharp } from "react-icons/io5";
 
 
@@ -51,7 +45,7 @@ const CurrentAffairs = () => {
                 </div>
                 <div className='handwrittennotes-list'>
                     <div className='dashboardmain'>
-                        <Link to={'/dashboard/course-page'} className='link'>
+                        <Link to={'/dashboard/current-affairs/daily-news'} className='link'>
                             <div className='coursepageContent-div'>
                                 <IoNewspaperSharp />
                                 <h6>Daily News</h6>

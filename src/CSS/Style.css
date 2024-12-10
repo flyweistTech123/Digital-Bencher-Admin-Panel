@@ -120,6 +120,7 @@
 .homepagecontent-left-header svg {
     font-size: 25px;
     color: #608FF7;
+    cursor: pointer;
 }
 
 
@@ -224,6 +225,7 @@
     border-radius: 7px;
     background: #F5F7FA;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     margin-top: 1rem;
@@ -232,6 +234,22 @@
 .studyplanner-image svg {
     font-size: 80px;
     color: #8BA3CB;
+}
+
+.studyplanner-image h6 {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #8BA3CB;
+    margin: 0;
+}
+
+.studyplanner-image p {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    color: #8BA3CB;
+    margin: 0;
 }
 
 .studyplanner-center-header {
@@ -271,6 +289,16 @@
     align-items: center;
     gap: 0.5rem;
     padding-left: 1rem;
+    position: relative;
+}
+
+
+.examstudy {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    color: #E9E9ED;
+    font-size: 20px;
 }
 
 .studyplanner-exam h6 {
@@ -342,9 +370,18 @@
     margin-top: 0.5rem;
 }
 
+.aboutexam-divs h5 {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: #838080;
+    margin: 0;
+    margin-top: 0.5rem;
+    background-color: #8BA3CB4D;
+}
 
 .coursepageContent-div {
-    width: 349px;
+    width: auto;
     height: 96px;
     border-radius: 15px;
     background: #FFFFFF;
@@ -367,6 +404,17 @@
     font-size: 25px;
     color: #464255;
 }
+
+.coursepageContent-div:hover h6,
+.coursepageContent-div:hover svg {
+    color: #608FF7;
+
+}
+
+.coursepageContent-div:hover {
+    transform: translateY(-5px);
+}
+
 
 .coursepagecontent-box {
     width: auto;
@@ -421,19 +469,22 @@
     outline: none;
     background-color: #0572F3;
     font-weight: 400;
-    font-size: 1rem; 
-    line-height: 1.2;  
+    font-size: 1rem;
+    line-height: 1.2;
     color: #FFFFFF;
     margin: 0;
     cursor: pointer;
-    transition: background-color 0.3s ease-in-out, transform 0.2s ease; /* Smooth effects */
+    transition: background-color 0.3s ease-in-out, transform 0.2s ease;
+    /* Smooth effects */
 }
 
-.handwritten-button button:hover{
+.handwritten-button button:hover {
     background-color: #608FF7;
 }
+
 .handwritten-button button:focus {
-    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5); /* Outline for focus */
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5);
+    /* Outline for focus */
     outline: none;
 }
 
@@ -661,7 +712,8 @@
     color: #545454;
 }
 
-.input-container select{
+
+.input-container select {
     width: 95%;
     height: 100%;
     padding-left: 16px;
@@ -674,6 +726,54 @@
 
 .input-container select:focus+label,
 .input-container select:not(:placeholder-shown)+label {
+    top: -10px;
+    font-weight: 400;
+    font-size: 16px;
+    color: #545454;
+}
+
+
+
+.textarea-container {
+    width: auto;
+    height: auto;
+    padding: 16.5px 14px 16.5px 14px;
+    border-radius: 8px;
+    border: 2px solid #262E3D99;
+    position: relative;
+    flex: 1;
+}
+
+.textarea-container label {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 12px;
+    color: #262E3D99;
+    letter-spacing: 0.0015em;
+    background: #fff;
+    transition: 0.3s ease-in-out;
+    padding: 0 5px;
+    pointer-events: none;
+}
+
+
+
+.textarea-container textarea {
+    width: 95%;
+    height: 150px;
+    padding-left: 16px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    outline: none;
+    position: relative;
+}
+
+.textarea-container textarea:focus+label,
+.textarea-container textarea:not(:placeholder-shown)+label {
     top: -10px;
     font-weight: 400;
     font-size: 16px;
@@ -748,12 +848,10 @@
 }
 
 
-.community-profile-content{
-
-}
+.community-profile-content {}
 
 
-.community-profile-content h6{
+.community-profile-content h6 {
     font-weight: 600;
     font-size: 16px;
     line-height: 24px;
@@ -761,7 +859,7 @@
     margin: 0;
 }
 
-.community-profile-content p{
+.community-profile-content p {
     font-weight: 600;
     font-size: 12px;
     line-height: 18px;
@@ -770,13 +868,13 @@
     margin-top: 0.5rem;
 }
 
-.community-profile-edit{
+.community-profile-edit {
     display: flex;
     align-items: center;
     gap: 0.2rem;
 }
 
-.community-profile-edit span{
+.community-profile-edit span {
     font-weight: 600;
     font-size: 16px;
     line-height: 24px;
@@ -784,11 +882,11 @@
     margin: 0;
 }
 
-.community-content{
+.community-content {
     margin-top: 1.5rem;
 }
 
-.community-content p{
+.community-content p {
     font-weight: 400;
     font-size: 12px;
     line-height: 18px;
@@ -796,31 +894,32 @@
     margin: 0;
 }
 
-.community-bottom-container{
+.community-bottom-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin-top: 1rem;
 }
 
-.community-bottom-like{
+.community-bottom-like {
     display: flex;
     align-items: center;
     gap: 2rem;
 }
 
-.community-bottom-likes{
+.community-bottom-likes {
     display: flex;
     align-items: center;
     gap: 0.8rem;
 }
-.community-bottom-likes svg{
+
+.community-bottom-likes svg {
     font-size: 22px;
     color: #000000;
     cursor: pointer;
 }
 
-.community-bottom-likes p{
+.community-bottom-likes p {
     font-weight: 400;
     font-size: 15px;
     line-height: 22px;
@@ -828,14 +927,14 @@
     margin: 0;
 }
 
-.community-bottom-pins{
+.community-bottom-pins {
     display: flex;
     align-items: center;
     gap: 3rem;
 }
 
 
-.community-main-Admin{
+.community-main-Admin {
     width: auto;
     height: auto;
     border-radius: 10px;
@@ -845,11 +944,9 @@
 }
 
 
-.community-Admin-header{
+.community-Admin-header {}
 
-}
-
-.community-Admin-header h6{
+.community-Admin-header h6 {
     font-weight: 600;
     font-size: 16px;
     line-height: 24px;
@@ -857,11 +954,11 @@
     margin: 0;
 }
 
-.community-Admin-textarea{
+.community-Admin-textarea {
     margin-top: 1rem;
 }
 
-.community-Admin-textarea textarea{
+.community-Admin-textarea textarea {
     width: 100%;
     height: 100px;
     outline: none;
@@ -873,7 +970,7 @@
     margin: 0;
 }
 
-.community-Admin-textarea textarea ::placeholder{
+.community-Admin-textarea textarea ::placeholder {
     font-weight: 400;
     font-size: 14px;
     line-height: 24px;
@@ -882,7 +979,7 @@
 }
 
 
-.sendbutton{
+.sendbutton {
     display: flex;
     align-items: end;
     justify-content: end;
@@ -890,28 +987,28 @@
 }
 
 
-.savebutton{
+.savebutton {
     display: flex;
     align-items: center;
     justify-content: center;
     margin-top: 2rem;
 }
 
-.addhandwritten-inputs{
+.addhandwritten-inputs {
     display: flex;
     flex-direction: column;
     gap: 2rem;
 }
 
 
-.addhandwritten-input{
+.addhandwritten-input {
     display: flex;
     flex-direction: column;
     gap: 2rem;
     width: 50%;
 }
 
-.addhandwritten-input h6{
+.addhandwritten-input h6 {
     font-weight: 600;
     font-size: 16px;
     line-height: 12px;
@@ -920,39 +1017,39 @@
     margin: 0;
 }
 
-.addhandwritten-input span{
+.addhandwritten-input span {
     color: #D43A3A;
 }
 
-.addhandwritten-inputs-div{
+.addhandwritten-inputs-div {
     display: flex;
     align-items: center;
     gap: 0.8rem;
 }
 
 
-.addhandwritten-inputs-icons{
+.addhandwritten-inputs-icons {
     display: flex;
     align-items: center;
     gap: 0.5rem;
     width: 20%;
 }
 
-.addhandwritten-inputs-icons svg{
+.addhandwritten-inputs-icons svg {
     color: #262E3D99;
     font-size: 22px;
     cursor: pointer;
 }
 
 
-.addhandwritten-input-two-div{
+.addhandwritten-input-two-div {
     display: flex;
-    align-items: center;
+    /* align-items: center; */
     gap: 2rem;
 }
 
 
-.addhandwritennotes-submit{
+.addhandwritennotes-submit {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -976,13 +1073,180 @@
     color: #0572F3;
     margin: 0;
     cursor: pointer;
-    transition: background-color 0.3s ease-in-out, transform 0.2s ease; 
+    transition: background-color 0.3s ease-in-out, transform 0.2s ease;
 }
 
-.handwritten-button-addnote button:hover{
+.handwritten-button-addnote button:hover {
     background-color: #608FF7;
 }
+
 .handwritten-button-addnote button:focus {
-    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5); /* Outline for focus */
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5);
+    /* Outline for focus */
     outline: none;
+}
+
+.aboutexam-divs-edit {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+
+.addcourse-container {
+    width: 100%;
+    display: flex;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.addcourse-container-left {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+}
+
+.addcourse-container-right {
+    flex: 2;
+}
+
+
+
+
+
+.addhandwrittennotes-textarea {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.addhandwrittennotes-textarea h6 {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 12px;
+    letter-spacing: 0.0015em;
+    color: #464255;
+    margin: 0;
+}
+
+.addcourse-radios-btns {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 0.5rem;
+    width: 60%;
+}
+
+
+.addcourse-radios {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 0.8rem;
+}
+
+
+
+.addcourse-radios p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 12px;
+    letter-spacing: 0.0015em;
+    color: #000000;
+    margin: 0;
+}
+
+
+.addcourse-upload-file {
+    border-radius: 8px;
+    border: 2px solid #262E3D99;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+.addcourse-upload-file svg {
+    color: #262E3D99;
+    font-size: 85px;
+}
+
+
+
+.addskills-inputs {
+    border: 1px solid red;
+
+}
+
+.addskills-inputs .ddhandwritten-input {
+    border: 1px solid yellow;
+}
+
+.dailynews-container{
+    margin-top: 3rem;
+}
+
+
+.dailynews-date {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.dailynews-date label {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19.36px;
+    color: #464255;
+    margin: 0;
+}
+
+.dailynews-date-div {
+    max-width: 220px;
+    height: 18px;
+    padding: 15px 37px 15px 37px;
+    border-radius: 10px;
+    border: 1px solid #D9D9D9;
+}
+
+.dailynews-date-div input{
+    width: 100%;
+    border: none;
+    outline: none;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19.36px;
+    color: #000000;
+    margin: 0;
+}
+
+
+.dailynews-btn{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+
+.dailynews-table{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.dailynews-table-div{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.dailynews-table-div label{
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19.36px;
+    color: #464255;
+    margin: 0;
 }

@@ -106,7 +106,7 @@ const Courses = () => {
                 </div>
                 <div className='handwrittennotes-list'>
                     <div className='handwrittennotes-list-header'>
-                        <Link to={'/dashboard/skills/add-skill'} className='link'>
+                        <Link to={'/dashboard/course-page/courses/add-course'} className='link'>
                             <div className='handwrittennotes-add'>
                                 <FaPlus />
                                 <h6>Add NEW Course</h6>

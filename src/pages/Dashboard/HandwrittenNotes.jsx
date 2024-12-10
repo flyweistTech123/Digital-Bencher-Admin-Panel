@@ -42,8 +42,8 @@ const HandwrittenNotes = () => {
                             <p>Image format should be PNG, JPEG or SVG*</p>
                         </div>
                         <div className='handwritten-button-container'>
-                            <div className='handwritten-button'>
-                                <button>Upload New Image</button>
+                        <div className='handwritten-button'>
+                                <button>Save</button>
                             </div>
                         </div>
                     </div>

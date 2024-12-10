@@ -1,6 +1,7 @@
 /** @format */
 
 import Chapters from "../pages/Chapters/Chapters.jsx";
+import AddCourses from "../pages/Courses/AddCourses.jsx";
 import Courses from "../pages/Courses/Courses.jsx";
 import AboutExam from "../pages/Dashboard/AboutExam.jsx";
 import AddHandwrittenNotes from "../pages/Dashboard/AddHandwrittenNotes.jsx";
@@ -8,6 +9,7 @@ import AddSkill from "../pages/Dashboard/AddSkill.jsx";
 import CommunityPage from "../pages/Dashboard/CommunityPage.jsx";
 import CoursePageContent from "../pages/Dashboard/CoursePageContent.jsx";
 import CurrentAffairs from "../pages/Dashboard/CurrentAffairs.jsx";
+import DailyNews from "../pages/Dashboard/DailyNews.jsx";
 import Dashboard from "../pages/Dashboard/Dashboard.jsx";
 import HandwrittenNotes from "../pages/Dashboard/HandwrittenNotes.jsx";
 import HomePageContent from "../pages/Dashboard/HomePageContent.jsx";
@@ -148,6 +150,14 @@ const allRoutes = [
     {
         route: "/dashboard/course-page/courses",
         component: <Courses />,
+    },
+    {
+        route: "/dashboard/course-page/courses/add-course",
+        component: <AddCourses />,
+    },
+    {
+        route: "/dashboard/current-affairs/daily-news",
+        component: <DailyNews />,
     },
 ];
 
