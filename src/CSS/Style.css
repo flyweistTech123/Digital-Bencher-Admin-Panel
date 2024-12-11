@@ -1417,13 +1417,13 @@
     margin: 0;
 }
 
-.daily-quiz-file svg{
+.daily-quiz-file svg {
     font-size: 20px;
     color: #00000080;
 }
 
 
-.daily-btn{
+.daily-btn {
     margin-top: 1rem;
     display: flex;
     align-items: center;
@@ -1432,16 +1432,14 @@
 }
 
 
-.youtubevideos-container{
-
-}
+.youtubevideos-container {}
 
 
-.youtubevideos-div{
+.youtubevideos-div {
     margin-bottom: 1.5rem;
 }
 
-.youtubevideos-div label{
+.youtubevideos-div label {
     font-weight: 600;
     font-size: 16px;
     line-height: 19.36px;
@@ -1450,20 +1448,20 @@
 }
 
 
-.youtubevideos-div-div{
+.youtubevideos-div-div {
     display: flex;
     gap: 4rem;
     margin-top: 1rem;
 }
 
 
-.youtubevideos-div-left{
+.youtubevideos-div-left {
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
 }
 
-.youtubevideos-div-left h6{
+.youtubevideos-div-left h6 {
     font-weight: 500;
     font-size: 16px;
     line-height: 19.36px;
@@ -1473,19 +1471,19 @@
 
 
 
-.youtubevideos-div-right{
+.youtubevideos-div-right {
     flex: 1;
 }
 
 
-.youtubevideos-right-div{
+.youtubevideos-right-div {
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
 }
 
 
-.youtubevideos-right-div h6{
+.youtubevideos-right-div h6 {
     font-weight: 500;
     font-size: 16px;
     line-height: 19.36px;
@@ -1494,20 +1492,20 @@
 }
 
 
-.youtubevideos-div-bottom{
+.youtubevideos-div-bottom {
     display: flex;
     align-items: center;
     gap: 2.5rem;
     margin-top: 1rem;
 }
 
-.youtubevideos-div-bottom-div{
+.youtubevideos-div-bottom-div {
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
 }
 
-.youtubevideos-div-bottom-div h6{
+.youtubevideos-div-bottom-div h6 {
     font-weight: 500;
     font-size: 16px;
     line-height: 19.36px;
@@ -1518,8 +1516,8 @@
 
 .youtubevideos-main-div-div {
     /* width: 70%; */
-    height: 48px;
-    padding: 0px 37px 0px 37px;
+    height: auto;
+    padding: 10px 37px 10px 37px;
     border-radius: 10px;
     border: 1px solid #D9D9D9;
     display: flex;
@@ -1534,3 +1532,199 @@
     margin: 0;
 }
 
+
+.landingpage-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+
+
+.landingpage-left {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.landingpage-left h5 {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: #00000080;
+    margin: 0;
+}
+
+
+.landingpage-left-btn {
+    width: auto;
+    height: 48px;
+    padding: 0px 37px 0px 37px;
+    border-radius: 10px;
+    border: 1px solid #D9D9D9;
+    background: #FFFFFF;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+
+.landingpage-left-btn h6 {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #3E3E45;
+    margin: 0;
+}
+
+.landingpage-center {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+
+.landingpage-center-div {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.landingpage-center-div h5 {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: #00000080;
+    margin: 0;
+}
+
+.landingpage-right {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.landingpage-right h5 {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: #00000080;
+    margin: 0;
+}
+
+
+.landingpage-right svg {
+    color: #000000;
+    font-size: 20px;
+}
+
+
+.landingpage-data {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.landingpage-data-div {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.landingpage-data-div p {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19.36px;
+    color: #A3A3A3;
+    margin: 0;
+}
+
+
+
+.landingpage-data-div-main {
+    width: auto;
+    height: 48px;
+    padding: 0px 37px 0px 37px;
+    border-radius: 10px;
+    border: 1px solid #D9D9D9;
+    background: #FFFFFF;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.landingpage-data-div-main span {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 19.36px;
+    color: #000000;
+    margin: 0;
+}
+
+.landingpage-Links {
+    margin-top: 1rem;
+}
+
+
+.landingpage-company-heading {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+.landingpage-company-heading p {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19.36px;
+    color: #A3A3A3;
+    margin: 0;
+}
+
+.landingpage-company-heading svg {
+    font-size: 16px;
+    color: #608FF7;
+}
+
+.landingpage-company-inputes {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-top: 1rem;
+}
+
+.aboutus-container{
+    margin-top: 2rem;
+}
+
+.aboutus-container-heading {
+    
+}
+
+.aboutus-container-heading p {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19.36px;
+    color: #A3A3A3;
+    margin: 0;
+}
+
+.aboutus-container-content {
+    width:auto;
+    height: auto;
+    padding: 20px 37px 20px 37px;
+    border-radius: 10px;
+    border: 1px solid #D9D9D9;
+    margin-top: 2rem;
+}
+
+.aboutus-container-content p{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #A3A3A3;
+    margin: 0;
+    margin-top: 1rem;
+}

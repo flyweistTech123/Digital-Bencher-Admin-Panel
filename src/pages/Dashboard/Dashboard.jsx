@@ -90,7 +90,7 @@ const Dashboard = () => {
                             <h6>Current Affairs Page Content</h6>
                         </div>
                     </Link>
-                    <Link to={'/dashboard/homepage-content'} className='link'>
+                    <Link to={'/dashboard/landing-page'} className='link'>
                         <div className='dashboardcontent'>
                             <BiSolidBookContent />
                             <h6>Landing Page Content</h6>

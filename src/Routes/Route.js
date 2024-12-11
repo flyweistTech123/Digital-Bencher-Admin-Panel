@@ -1,5 +1,7 @@
 /** @format */
 
+import AboutUs from "../pages/About Us/AboutUs.jsx";
+import Careers from "../pages/Careers/Careers.jsx";
 import Chapters from "../pages/Chapters/Chapters.jsx";
 import AddCourses from "../pages/Courses/AddCourses.jsx";
 import Courses from "../pages/Courses/Courses.jsx";
@@ -15,6 +17,7 @@ import Dashboard from "../pages/Dashboard/Dashboard.jsx";
 import EditorialAnalysis from "../pages/Dashboard/EditorialAnalysis.jsx";
 import HandwrittenNotes from "../pages/Dashboard/HandwrittenNotes.jsx";
 import HomePageContent from "../pages/Dashboard/HomePageContent.jsx";
+import LandingPage from "../pages/Dashboard/LandingPage.jsx";
 import SkillsPage from "../pages/Dashboard/SkillsPage.jsx";
 import StudyPlannerAI from "../pages/Dashboard/StudyPlannerAI.jsx";
 import TargetCurrentAffairs from "../pages/Dashboard/TargetCurrentAffairs.jsx";
@@ -26,12 +29,14 @@ import ForgotPassword from "../pages/Login/ForgotPassword.jsx";
 import Login from "../pages/Login/Login.jsx";
 import OTP from "../pages/Login/OTP.jsx";
 import Setpassword from "../pages/Login/Setpassword.jsx";
+import PrivacyPolicy from "../pages/Privacy Policy/PrivacyPolicy.jsx";
 import Quizapp from "../pages/Quiz app/Quizapp.jsx";
 import Ratings from "../pages/Ratings/Ratings.jsx";
 import Studentarea from "../pages/Student area/Studentarea.jsx";
 import Students from "../pages/Students/Students.jsx";
 import StudyPlanner from "../pages/Study Planner/StudyPlanner.jsx";
 import Subjects from "../pages/Subjects/Subjects.jsx";
+import TermsandConditions from "../pages/Terms & Conditions/TermsandConditions.jsx";
 import Topics from "../pages/Topics/Topics.jsx";
 import VideoPlayer from "../pages/Video Player/VideoPlayer.jsx";
 import Vods from "../pages/Vods/Vods.jsx";
@@ -178,6 +183,26 @@ const allRoutes = [
     {
         route: "/dashboard/current-affairs/youtube-videos",
         component: <YoutubeVideos />,
+    },
+    {
+        route: "/dashboard/landing-page",
+        component: <LandingPage />,
+    },
+    {
+        route: "/dashboard/landing-page/aboutus",
+        component: <AboutUs />,
+    },
+    {
+        route: "/dashboard/landing-page/termsandconditions",
+        component: <TermsandConditions />,
+    },
+    {
+        route: "/dashboard/landing-page/privacy-policy",
+        component: <PrivacyPolicy />,
+    },
+    {
+        route: "/dashboard/landing-page/careers",
+        component: <Careers />,
     },
 ];
 
