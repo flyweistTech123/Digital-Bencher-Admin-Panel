@@ -51,26 +51,26 @@ const CurrentAffairs = () => {
                                 <h6>Daily News</h6>
                             </div>
                         </Link>
-                        <Link to={'/dashboard/course-page'} className='link'>
+                        <Link to={'/dashboard/current-affairs/editorial-analysis'} className='link'>
                             <div className='coursepageContent-div'>
                                 <IoNewspaperSharp />
                                 <h6>Editorial Analysis</h6>
                             </div>
                         </Link>
-                        <Link to={'/dashboard/course-page'} className='link'>
+                        <Link to={'/dashboard/current-affairs/daily-quiz'} className='link'>
                             <div className='coursepageContent-div'>
                                 <IoNewspaperSharp />
                                 <h6>Daily Quiz</h6>
                             </div>
                         </Link>
 
-                        <Link to={'/dashboard/course-page'} className='link'>
+                        <Link to={'/dashboard/current-affairs/target-current-affairs'} className='link'>
                             <div className='coursepageContent-div'>
                                 <IoNewspaperSharp />
                                 <h6>Target Current Affairs</h6>
                             </div>
                         </Link>
-                        <Link to={'/dashboard/course-page'} className='link'>
+                        <Link to={'/dashboard/current-affairs/youtube-videos'} className='link'>
                             <div className='coursepageContent-div'>
                                 <IoNewspaperSharp />
                                 <h6>Youtube Videos</h6>

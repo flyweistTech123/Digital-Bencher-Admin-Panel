@@ -10,11 +10,15 @@ import CommunityPage from "../pages/Dashboard/CommunityPage.jsx";
 import CoursePageContent from "../pages/Dashboard/CoursePageContent.jsx";
 import CurrentAffairs from "../pages/Dashboard/CurrentAffairs.jsx";
 import DailyNews from "../pages/Dashboard/DailyNews.jsx";
+import DailyQuiz from "../pages/Dashboard/DailyQuiz.jsx";
 import Dashboard from "../pages/Dashboard/Dashboard.jsx";
+import EditorialAnalysis from "../pages/Dashboard/EditorialAnalysis.jsx";
 import HandwrittenNotes from "../pages/Dashboard/HandwrittenNotes.jsx";
 import HomePageContent from "../pages/Dashboard/HomePageContent.jsx";
 import SkillsPage from "../pages/Dashboard/SkillsPage.jsx";
 import StudyPlannerAI from "../pages/Dashboard/StudyPlannerAI.jsx";
+import TargetCurrentAffairs from "../pages/Dashboard/TargetCurrentAffairs.jsx";
+import YoutubeVideos from "../pages/Dashboard/YoutubeVideos.jsx";
 import Educator from "../pages/Educator/Educator.jsx";
 import Employees from "../pages/Employees/Employees.jsx";
 import GoalExams from "../pages/Goal Exams/GoalExams.jsx";
@@ -158,6 +162,22 @@ const allRoutes = [
     {
         route: "/dashboard/current-affairs/daily-news",
         component: <DailyNews />,
+    },
+    {
+        route: "/dashboard/current-affairs/editorial-analysis",
+        component: <EditorialAnalysis />,
+    },
+    {
+        route: "/dashboard/current-affairs/daily-quiz",
+        component: <DailyQuiz />,
+    },
+    {
+        route: "/dashboard/current-affairs/target-current-affairs",
+        component: <TargetCurrentAffairs />,
+    },
+    {
+        route: "/dashboard/current-affairs/youtube-videos",
+        component: <YoutubeVideos />,
     },
 ];
 

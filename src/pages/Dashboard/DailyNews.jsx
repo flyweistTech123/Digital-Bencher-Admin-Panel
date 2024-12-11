@@ -3,8 +3,6 @@ import HOC from '../../components/HOC/HOC'
 
 import { GoArrowLeft } from "react-icons/go";
 import { FaCircle } from "react-icons/fa";
-import { IoMdEye } from "react-icons/io";
-import { RiDeleteBin6Line } from "react-icons/ri";
 import { IoImageOutline } from "react-icons/io5";
 
 

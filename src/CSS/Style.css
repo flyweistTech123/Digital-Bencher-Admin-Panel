@@ -1185,7 +1185,7 @@
     border: 1px solid yellow;
 }
 
-.dailynews-container{
+.dailynews-container {
     margin-top: 3rem;
 }
 
@@ -1212,7 +1212,7 @@
     border: 1px solid #D9D9D9;
 }
 
-.dailynews-date-div input{
+.dailynews-date-div input {
     width: 100%;
     border: none;
     outline: none;
@@ -1224,29 +1224,313 @@
 }
 
 
-.dailynews-btn{
+.dailynews-btn {
     display: flex;
     align-items: center;
     justify-content: end;
 }
 
 
-.dailynews-table{
+.dailynews-table {
     display: flex;
     flex-direction: column;
     gap: 2rem;
 }
 
-.dailynews-table-div{
+.dailynews-table-div {
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
 }
 
-.dailynews-table-div label{
+.dailynews-table-div label {
     font-weight: 600;
     font-size: 16px;
     line-height: 19.36px;
     color: #464255;
     margin: 0;
 }
+
+
+.editorial-container {
+    margin-top: 1.5rem;
+}
+
+
+.editorial-inputes {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+
+.editorial-inpute {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.editorial-inpute-div {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+
+.editorial-inpute label {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19.36px;
+    color: #464255;
+    margin: 0;
+}
+
+.editorial-inpute select {
+    width: auto;
+    height: 48px;
+    padding: 0px 37px 0px 37px;
+    border-radius: 10px;
+    border: 1px solid #D9D9D9;
+    outline: none;
+}
+
+.editorial-inpute input {
+    width: auto;
+    height: 48px;
+    padding: 0px 37px 0px 37px;
+    border-radius: 10px;
+    border: 1px solid #D9D9D9;
+    outline: none;
+}
+
+.editorial-inputs-icons {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.editorial-inputs-icons svg {
+    color: #262E3D99;
+    font-size: 20px;
+}
+
+.editorial-editorials {
+    margin-top: 1.5rem;
+}
+
+.editorial-label {
+    margin-bottom: 1.5rem;
+}
+
+.editorial-label label {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19.36px;
+    color: #464255;
+    margin: 0;
+}
+
+.editorial-main {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.editorial-main-div {
+    width: 70%;
+    height: 48px;
+    padding: 0px 37px 0px 37px;
+    border-radius: 10px;
+    border: 1px solid #D9D9D9;
+    display: flex;
+    align-items: center;
+}
+
+.editorial-main-div p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: #00000080;
+    margin: 0;
+}
+
+
+.editorial-btns {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+.daily-quiz {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.daily-quiz-input {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.daily-quiz-input label {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19.36px;
+    color: #464255;
+    margin: 0;
+}
+
+.daily-quiz-input input {
+    width: auto;
+    height: 48px;
+    padding: 0px 37px 0px 37px;
+    border-radius: 10px;
+    border: 1px solid #D9D9D9;
+    background: #FFFFFF;
+    outline: none;
+}
+
+
+.daily-quiz-file {
+    width: auto;
+    height: 48px;
+    padding: 0px 37px 0px 37px;
+    border-radius: 10px;
+    border: 1px solid #D9D9D9;
+    background: #FFFFFF;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+}
+
+.daily-quiz-file p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: #00000080;
+    margin: 0;
+}
+
+.daily-quiz-file svg{
+    font-size: 20px;
+    color: #00000080;
+}
+
+
+.daily-btn{
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 60%;
+}
+
+
+.youtubevideos-container{
+
+}
+
+
+.youtubevideos-div{
+    margin-bottom: 1.5rem;
+}
+
+.youtubevideos-div label{
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19.36px;
+    color: #464255;
+    margin: 0;
+}
+
+
+.youtubevideos-div-div{
+    display: flex;
+    gap: 4rem;
+    margin-top: 1rem;
+}
+
+
+.youtubevideos-div-left{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.youtubevideos-div-left h6{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19.36px;
+    color: #A3A3A3;
+    margin: 0;
+}
+
+
+
+.youtubevideos-div-right{
+    flex: 1;
+}
+
+
+.youtubevideos-right-div{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+
+.youtubevideos-right-div h6{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19.36px;
+    color: #A3A3A3;
+    margin: 0;
+}
+
+
+.youtubevideos-div-bottom{
+    display: flex;
+    align-items: center;
+    gap: 2.5rem;
+    margin-top: 1rem;
+}
+
+.youtubevideos-div-bottom-div{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.youtubevideos-div-bottom-div h6{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19.36px;
+    color: #A3A3A3;
+    margin: 0;
+}
+
+
+.youtubevideos-main-div-div {
+    /* width: 70%; */
+    height: 48px;
+    padding: 0px 37px 0px 37px;
+    border-radius: 10px;
+    border: 1px solid #D9D9D9;
+    display: flex;
+    align-items: center;
+}
+
+.youtubevideos-main-div-div p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: #00000080;
+    margin: 0;
+}
+
