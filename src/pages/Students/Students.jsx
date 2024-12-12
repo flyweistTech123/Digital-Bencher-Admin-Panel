@@ -86,6 +86,8 @@ const Students = () => {
         },
     ];
 
+    const navigate = useNavigate();
+
     return (
         <>
             <div className='dashboardcontainer'>
@@ -130,7 +132,7 @@ const Students = () => {
                                         <td>{data.studentId}</td>
                                         <td>
                                             <div className="handwrittennotes-table-icons">
-                                                <div className="handwrittennotes-icon">
+                                                <div className="handwrittennotes-icon" onClick={()=>navigate('/students/student-profile')}>
                                                     <MdArrowOutward />
                                                 </div>
                                                 <div className="handwrittennotes-icon">

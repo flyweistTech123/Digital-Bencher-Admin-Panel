@@ -28,7 +28,7 @@ const Sidebar = () => {
         {
             name: "Groups",
             icon: <MdGroups2 />,
-            link: "/userslists",
+            link: "/groups",
         },
         {
             name: "Students",
@@ -78,12 +78,12 @@ const Sidebar = () => {
         {
             name: "Course Type",
             icon: <CgNotes />,
-            link: "/notifications",
+            link: "/course-type",
         },
         {
             name: "Payment",
             icon: <FaRegMoneyBill1 />,
-            link: "/policy-setting",
+            link: "/payments",
         },
         {
             name: "Quiz app",

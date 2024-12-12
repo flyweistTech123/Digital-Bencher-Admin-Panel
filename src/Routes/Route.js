@@ -2,7 +2,9 @@
 
 import AboutUs from "../pages/About Us/AboutUs.jsx";
 import Careers from "../pages/Careers/Careers.jsx";
+import AddChapter from "../pages/Chapters/AddChapter.jsx";
 import Chapters from "../pages/Chapters/Chapters.jsx";
+import CourseType from "../pages/Course Type/CourseType.jsx";
 import AddCourses from "../pages/Courses/AddCourses.jsx";
 import Courses from "../pages/Courses/Courses.jsx";
 import AboutExam from "../pages/Dashboard/AboutExam.jsx";
@@ -24,21 +26,29 @@ import TargetCurrentAffairs from "../pages/Dashboard/TargetCurrentAffairs.jsx";
 import YoutubeVideos from "../pages/Dashboard/YoutubeVideos.jsx";
 import Educator from "../pages/Educator/Educator.jsx";
 import Employees from "../pages/Employees/Employees.jsx";
+import AddGoalExam from "../pages/Goal Exams/AddGoalExam.jsx";
 import GoalExams from "../pages/Goal Exams/GoalExams.jsx";
+import AddGroup from "../pages/Groups/AddGroup.jsx";
+import Groups from "../pages/Groups/Groups.jsx";
 import ForgotPassword from "../pages/Login/ForgotPassword.jsx";
 import Login from "../pages/Login/Login.jsx";
 import OTP from "../pages/Login/OTP.jsx";
 import Setpassword from "../pages/Login/Setpassword.jsx";
+import Payments from "../pages/Payments/Payments.jsx";
 import PrivacyPolicy from "../pages/Privacy Policy/PrivacyPolicy.jsx";
 import Quizapp from "../pages/Quiz app/Quizapp.jsx";
 import Ratings from "../pages/Ratings/Ratings.jsx";
 import Studentarea from "../pages/Student area/Studentarea.jsx";
+import StudentProfile from "../pages/Students/StudentProfile.jsx";
 import Students from "../pages/Students/Students.jsx";
 import StudyPlanner from "../pages/Study Planner/StudyPlanner.jsx";
+import AddSubject from "../pages/Subjects/AddSubject.jsx";
 import Subjects from "../pages/Subjects/Subjects.jsx";
 import TermsandConditions from "../pages/Terms & Conditions/TermsandConditions.jsx";
+import AddTopic from "../pages/Topics/AddTopic.jsx";
 import Topics from "../pages/Topics/Topics.jsx";
 import VideoPlayer from "../pages/Video Player/VideoPlayer.jsx";
+import AddVod from "../pages/Vods/AddVod.jsx";
 import Vods from "../pages/Vods/Vods.jsx";
 
 
@@ -203,6 +213,46 @@ const allRoutes = [
     {
         route: "/dashboard/landing-page/careers",
         component: <Careers />,
+    },
+    {
+        route: "/groups",
+        component: <Groups />,
+    },
+    {
+        route: "/groups/add-group",
+        component: <AddGroup />,
+    },
+    {
+        route: "/students/student-profile",
+        component: <StudentProfile />,
+    },
+    {
+        route: "/goalexams/add-goalexam",
+        component: <AddGoalExam />,
+    },
+    {
+        route: "/subjects/add-subject",
+        component: <AddSubject />,
+    },
+    {
+        route: "/subjects/add-chapter",
+        component: <AddChapter />,
+    },
+    {
+        route: "/topics/add-topic",
+        component: <AddTopic />,
+    },
+    {
+        route: "/vods/add-vod",
+        component: <AddVod />,
+    },
+    {
+        route: "/course-type",
+        component: <CourseType />,
+    },
+    {
+        route: "/payments",
+        component: <Payments />,
     },
 ];
 

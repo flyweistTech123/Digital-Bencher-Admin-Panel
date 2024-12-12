@@ -86,6 +86,8 @@ const GoalExams = () => {
         },
     ];
 
+    const navigate = useNavigate()
+
     return (
         <>
             <div className='dashboardcontainer'>
@@ -94,7 +96,7 @@ const GoalExams = () => {
                 </div>
                 <div className='handwrittennotes-list'>
                     <div className='handwrittennotes-list-header'>
-                        <Link to={'/dashboard/skills/add-skill'} className='link'>
+                        <Link to={'/goalexams/add-goalexam'} className='link'>
                             <div className='handwrittennotes-add'>
                                 <FaPlus />
                                 <h6>Add NEW GOAL Exam</h6>
