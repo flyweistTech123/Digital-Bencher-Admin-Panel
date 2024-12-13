@@ -19,19 +19,19 @@ const StudyPlanner = () => {
                     <h6>Study Planner</h6>
                 </div>
                 <div className='dashboardmain'>
-                    <Link to={'/dashboard/homepage-content'} className='link'>
+                    <Link to={'/study-planner/student-progress'} className='link'>
                         <div className='dashboardcontent'>
                             <HiMiniBarsArrowUp />
                             <h6>Student Progress </h6>
                         </div>
                     </Link>
-                    <Link to={'/dashboard/studyplanner-AI'} className='link'>
+                    <Link to={'/study-planner/student-studyplans'} className='link'>
                         <div className='dashboardcontent'>
                             <FaCalendarDays />
                             <h6>Student Study Plans</h6>
                         </div>
                     </Link>
-                    <Link to={'/dashboard/about-exam'} className='link'>
+                    <Link to={'/study-planner/study-plannercourses'} className='link'>
                         <div className='dashboardcontent'>
                             <FaFilePen />
                             <h6>Study Planner Courses</h6>

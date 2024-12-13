@@ -36,17 +36,40 @@ import OTP from "../pages/Login/OTP.jsx";
 import Setpassword from "../pages/Login/Setpassword.jsx";
 import Payments from "../pages/Payments/Payments.jsx";
 import PrivacyPolicy from "../pages/Privacy Policy/PrivacyPolicy.jsx";
+import PracticeQuestions from "../pages/Quiz app/PracticeQuestions.jsx";
+import PYQsvideos from "../pages/Quiz app/PYQsvideos.jsx";
 import Quizapp from "../pages/Quiz app/Quizapp.jsx";
+import TestSeries from "../pages/Quiz app/TestSeries.jsx";
 import Ratings from "../pages/Ratings/Ratings.jsx";
+import ActivityLogs from "../pages/Student area/ActivityLogs.jsx";
+import AddPolls from "../pages/Student area/AddPolls.jsx";
+import AddPurchasedItems from "../pages/Student area/AddPurchasedItems.jsx";
+import AddRedemptions from "../pages/Student area/AddRedemptions.jsx";
+import AddUserCarts from "../pages/Student area/AddUserCarts.jsx";
+import AddUserWishlist from "../pages/Student area/AddUserWishlist.jsx";
+import PollOptions from "../pages/Student area/PollOptions.jsx";
+import Polls from "../pages/Student area/Polls.jsx";
+import PurchasedItems from "../pages/Student area/PurchasedItems.jsx";
+import Redemptions from "../pages/Student area/Redemptions.jsx";
 import Studentarea from "../pages/Student area/Studentarea.jsx";
+import UserCarts from "../pages/Student area/UserCarts.jsx";
+import UserWishlist from "../pages/Student area/UserWishlist.jsx";
 import StudentProfile from "../pages/Students/StudentProfile.jsx";
 import Students from "../pages/Students/Students.jsx";
+import AddStudyPlannerCourses from "../pages/Study Planner/AddStudyPlannerCourses.jsx";
+import StudentProgress from "../pages/Study Planner/StudentProgress.jsx";
+import StudentStudyPlans from "../pages/Study Planner/StudentStudyPlans.jsx";
 import StudyPlanner from "../pages/Study Planner/StudyPlanner.jsx";
+import StudyPlannerCourses from "../pages/Study Planner/StudyPlannerCourses.jsx";
 import AddSubject from "../pages/Subjects/AddSubject.jsx";
 import Subjects from "../pages/Subjects/Subjects.jsx";
 import TermsandConditions from "../pages/Terms & Conditions/TermsandConditions.jsx";
 import AddTopic from "../pages/Topics/AddTopic.jsx";
 import Topics from "../pages/Topics/Topics.jsx";
+import AddVideoComments from "../pages/Video Player/AddVideoComments.jsx";
+import AddVideoHistory from "../pages/Video Player/AddVideoHistory.jsx";
+import VideoComments from "../pages/Video Player/VideoComments.jsx";
+import VideoHistory from "../pages/Video Player/VideoHistory.jsx";
 import VideoPlayer from "../pages/Video Player/VideoPlayer.jsx";
 import AddVod from "../pages/Vods/AddVod.jsx";
 import Vods from "../pages/Vods/Vods.jsx";
@@ -253,6 +276,98 @@ const allRoutes = [
     {
         route: "/payments",
         component: <Payments />,
+    },
+    {
+        route: "/quizapp/test-series",
+        component: <TestSeries />,
+    },
+    {
+        route: "/quizapp/practice-questions",
+        component: <PracticeQuestions />,
+    },
+    {
+        route: "/quizapp/pyqs-videos",
+        component: <PYQsvideos />,
+    },
+    {
+        route: "/student-area/activity-logs",
+        component: <ActivityLogs />,
+    },
+    {
+        route: "/student-area/poll-options",
+        component: <PollOptions />,
+    },
+    {
+        route: "/student-area/polls",
+        component: <Polls />,
+    },
+    {
+        route: "/student-area/purchased-items",
+        component: <PurchasedItems />,
+    },
+    {
+        route: "/student-area/redemptions",
+        component: <Redemptions />,
+    },
+    {
+        route: "/student-area/user-carts",
+        component: <UserCarts />,
+    },
+    {
+        route: "/student-area/user-wishlist",
+        component: <UserWishlist />,
+    },
+    {
+        route: "/student-area/polls/add-polls",
+        component: <AddPolls />,
+    },
+    {
+        route: "/student-area/purchased-items/add-purchaseditems",
+        component: <AddPurchasedItems />,
+    },
+    {
+        route: "/student-area/redemptions/add-redemptions",
+        component: <AddRedemptions />,
+    },
+    {
+        route: "/student-area/user-carts/add-user-carts",
+        component: <AddUserCarts />,
+    },
+    {
+        route: "/student-area/user-wishlist/add-/user-wishlist",
+        component: <AddUserWishlist />,
+    },
+    {
+        route: "/study-planner/student-progress",
+        component: <StudentProgress />,
+    },
+    {
+        route: "/study-planner/student-studyplans",
+        component: <StudentStudyPlans />,
+    },
+    {
+        route: "/study-planner/study-plannercourses",
+        component: <StudyPlannerCourses />,
+    },
+    {
+        route: "/study-planner/study-plannercourses/add-study-plannercourses",
+        component: <AddStudyPlannerCourses />,
+    },
+    {
+        route: "/video-player/video-comments",
+        component: <VideoComments />,
+    },
+    {
+        route: "/video-player/video-history",
+        component: <VideoHistory />,
+    },
+    {
+        route: "/video-player/video-history/add-video-history",
+        component: <AddVideoHistory />,
+    },
+    {
+        route: "/video-player/video-comments/add-video-comments",
+        component: <AddVideoComments />,
     },
 ];
 

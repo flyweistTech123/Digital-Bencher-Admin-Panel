@@ -13,7 +13,7 @@ import { GoArrowLeft } from "react-icons/go";
 
 
 
-const TestSeries = () => {
+const PracticeQuestions = () => {
     const navigate = useNavigate()
     const [show, setShow] = useState(false)
 
@@ -26,14 +26,14 @@ const TestSeries = () => {
         <>
             <div className='dashboardcontainer'>
                 <div className='dashboardcontainer-header'>
-                    <h6>Test Series</h6>
+                    <h6>Practice Questions</h6>
                     <p>
                         <GoArrowLeft
                             size={25}
                             style={{ cursor: 'pointer' }}
                             onClick={() => navigate(-1)}
                         />
-                        Quiz app /<span>  Test Series</span>
+                        Quiz app /<span> Practice Questions</span>
                     </p>
                 </div>
                 <div className='studentprofile-container'>
@@ -123,18 +123,7 @@ const TestSeries = () => {
                                             </div>
                                         </div>
                                     </div>
-                                    <div className='addhandwritten-input'>
-                                        <h6>Free Tests<span>*</span></h6>
-                                        <div className='addhandwritten-inputs-div'>
-                                            <div className="input-container">
-                                                <input type="text" />
-                                                <label htmlFor="">Enter free tests count</label>
-                                            </div>
-                                            <div className='addhandwritten-inputs-icons'>
-
-                                            </div>
-                                        </div>
-                                    </div>
+                                  
                                 </div>
                                 <div className='addhandwritten-input-two-div'>
                                     <div className='addhandwritten-input'>
@@ -154,7 +143,7 @@ const TestSeries = () => {
                                         <div className='addhandwritten-inputs-div'>
                                             <div className="input-container">
                                                 <input type="text" />
-                                                <label htmlFor="">Enter duration ( hrs )</label>
+                                                <label htmlFor="">Enter bundle description</label>
                                             </div>
                                             <div className='addhandwritten-inputs-icons'>
 
@@ -249,4 +238,4 @@ const TestSeries = () => {
     )
 }
 
-export default HOC(TestSeries)
+export default HOC(PracticeQuestions)
