@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import HOC from '../../components/HOC/HOC'
+import { TableModal } from '../../components/Modals/Modals';
 
 
 import { useNavigate } from 'react-router-dom';
@@ -16,6 +17,8 @@ import { GoArrowLeft } from "react-icons/go";
 const TestSeries = () => {
     const navigate = useNavigate()
     const [show, setShow] = useState(false)
+    const [show1, setShow1] = useState(false)
+
 
     const toggle = () => {
         setShow(!show)
@@ -24,6 +27,10 @@ const TestSeries = () => {
 
     return (
         <>
+            <TableModal
+                show={show1}
+                onHide={() => setShow1(false)}
+            />
             <div className='dashboardcontainer'>
                 <div className='dashboardcontainer-header'>
                     <h6>Test Series</h6>
@@ -40,129 +47,129 @@ const TestSeries = () => {
                     <div className='studyplanner-container'>
                         <div className='addhandwritten-inputs'>
                             {!show &&
-                             <>
-                                <div className='addhandwritten-input-two-div'>
-                                    <div className='testseries-inputs'>
-                                        <div className='testseries-input'>
-                                            <h6>Goal Exam<span>*</span></h6>
-                                            <div className='addhandwritten-inputs-div'>
-                                                <div className="input-container">
-                                                    <select name="" id="">
-                                                        <option value=""></option>
-                                                    </select>
-                                                    <label htmlFor="">Select Goal Exam</label>
-                                                </div>
-                                                <div className='addhandwritten-inputs-icons'>
-                                                    <AiFillPlusCircle />
-                                                    <MdOutlineRemoveRedEye />
-                                                    <AiFillEdit />
+                                <>
+                                    <div className='addhandwritten-input-two-div'>
+                                        <div className='testseries-inputs'>
+                                            <div className='testseries-input'>
+                                                <h6>Goal Exam<span>*</span></h6>
+                                                <div className='addhandwritten-inputs-div'>
+                                                    <div className="input-container">
+                                                        <select name="" id="">
+                                                            <option value=""></option>
+                                                        </select>
+                                                        <label htmlFor="">Select Goal Exam</label>
+                                                    </div>
+                                                    <div className='addhandwritten-inputs-icons'>
+                                                        <AiFillPlusCircle />
+                                                        <MdOutlineRemoveRedEye />
+                                                        <AiFillEdit />
+                                                    </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <div className='testseries-input'>
-                                            <h6>How many tests are there in this bundle<span>*</span></h6>
-                                            <div className='addhandwritten-inputs-div'>
-                                                <div className="input-container">
-                                                    <select name="" id="">
-                                                        <option value=""></option>
-                                                    </select>
-                                                    <label htmlFor="">Select Count</label>
-                                                </div>
-                                                <div className='addhandwritten-inputs-icons'>
-                                                    {/* <AiFillPlusCircle />
+                                            <div className='testseries-input'>
+                                                <h6>How many tests are there in this bundle<span>*</span></h6>
+                                                <div className='addhandwritten-inputs-div'>
+                                                    <div className="input-container">
+                                                        <select name="" id="">
+                                                            <option value=""></option>
+                                                        </select>
+                                                        <label htmlFor="">Select Count</label>
+                                                    </div>
+                                                    <div className='addhandwritten-inputs-icons'>
+                                                        {/* <AiFillPlusCircle />
                                             <MdOutlineRemoveRedEye />
                                             <AiFillEdit /> */}
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div className='addhandwritten-input'>
+                                            <h6>Tile Image</h6>
+                                            <div className='addcourse-upload-file'>
+                                                <SlCloudUpload />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className='addhandwritten-input-two-div'>
+                                        <div className='addhandwritten-input'>
+                                            <h6>Cost of the Bundle<span>*</span></h6>
+                                            <div className='addhandwritten-inputs-div'>
+                                                <div className="input-container">
+                                                    <input type="text" />
+                                                    <label htmlFor="">Enter the cost</label>
+                                                </div>
+                                                <div className='addhandwritten-inputs-icons'>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div className='addhandwritten-input'>
+                                            <h6>Total Duration of the Bundle</h6>
+                                            <div className='addhandwritten-inputs-div'>
+                                                <div className="input-container">
+                                                    <input type="text" />
+                                                    <label htmlFor="">Enter duration (hrs)</label>
+                                                </div>
+                                                <div className='addhandwritten-inputs-icons'>
+
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
+                                    <div className='addhandwritten-input-two-div'>
+                                        <div className='addhandwritten-input'>
+                                            <h6>Locale<span>*</span></h6>
+                                            <div className='addhandwritten-inputs-div'>
+                                                <div className="input-container">
+                                                    <input type="text" />
+                                                    <label htmlFor="">Enter Language here</label>
+                                                </div>
+                                                <div className='addhandwritten-inputs-icons'>
 
-                                    <div className='addhandwritten-input'>
-                                        <h6>Tile Image</h6>
-                                        <div className='addcourse-upload-file'>
-                                            <SlCloudUpload />
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className='addhandwritten-input-two-div'>
-                                    <div className='addhandwritten-input'>
-                                        <h6>Cost of the Bundle<span>*</span></h6>
-                                        <div className='addhandwritten-inputs-div'>
-                                            <div className="input-container">
-                                                <input type="text" />
-                                                <label htmlFor="">Enter the cost</label>
-                                            </div>
-                                            <div className='addhandwritten-inputs-icons'>
-
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div className='addhandwritten-input'>
-                                        <h6>Total Duration of the Bundle</h6>
-                                        <div className='addhandwritten-inputs-div'>
-                                            <div className="input-container">
-                                                <input type="text" />
-                                                <label htmlFor="">Enter duration (hrs)</label>
-                                            </div>
-                                            <div className='addhandwritten-inputs-icons'>
+                                        <div className='addhandwritten-input'>
+                                            <h6>Free Tests<span>*</span></h6>
+                                            <div className='addhandwritten-inputs-div'>
+                                                <div className="input-container">
+                                                    <input type="text" />
+                                                    <label htmlFor="">Enter free tests count</label>
+                                                </div>
+                                                <div className='addhandwritten-inputs-icons'>
 
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div className='addhandwritten-input-two-div'>
-                                    <div className='addhandwritten-input'>
-                                        <h6>Locale<span>*</span></h6>
-                                        <div className='addhandwritten-inputs-div'>
-                                            <div className="input-container">
-                                                <input type="text" />
-                                                <label htmlFor="">Enter Language here</label>
-                                            </div>
-                                            <div className='addhandwritten-inputs-icons'>
+                                    <div className='addhandwritten-input-two-div'>
+                                        <div className='addhandwritten-input'>
+                                            <h6>Bundle Name</h6>
+                                            <div className='addhandwritten-inputs-div'>
+                                                <div className="input-container">
+                                                    <input type="text" />
+                                                    <label htmlFor="">Enter Name here</label>
+                                                </div>
+                                                <div className='addhandwritten-inputs-icons'>
 
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div className='addhandwritten-input'>
+                                            <h6>Bundle Description<span>*</span></h6>
+                                            <div className='addhandwritten-inputs-div'>
+                                                <div className="input-container">
+                                                    <input type="text" />
+                                                    <label htmlFor="">Enter duration ( hrs )</label>
+                                                </div>
+                                                <div className='addhandwritten-inputs-icons'>
+
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
-                                    <div className='addhandwritten-input'>
-                                        <h6>Free Tests<span>*</span></h6>
-                                        <div className='addhandwritten-inputs-div'>
-                                            <div className="input-container">
-                                                <input type="text" />
-                                                <label htmlFor="">Enter free tests count</label>
-                                            </div>
-                                            <div className='addhandwritten-inputs-icons'>
-
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className='addhandwritten-input-two-div'>
-                                    <div className='addhandwritten-input'>
-                                        <h6>Bundle Name</h6>
-                                        <div className='addhandwritten-inputs-div'>
-                                            <div className="input-container">
-                                                <input type="text" />
-                                                <label htmlFor="">Enter Name here</label>
-                                            </div>
-                                            <div className='addhandwritten-inputs-icons'>
-
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className='addhandwritten-input'>
-                                        <h6>Bundle Description<span>*</span></h6>
-                                        <div className='addhandwritten-inputs-div'>
-                                            <div className="input-container">
-                                                <input type="text" />
-                                                <label htmlFor="">Enter duration ( hrs )</label>
-                                            </div>
-                                            <div className='addhandwritten-inputs-icons'>
-
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </>
+                                </>
                             }
                             {show &&
                                 <>
@@ -227,7 +234,7 @@ const TestSeries = () => {
                                                 </div>
                                             </div>
                                         </div>
-                                        <div className='addhandwritten-input'>
+                                        <div className='addhandwritten-input' onClick={()=>setShow1(true)}>
                                             <h6>Upload Test Series</h6>
                                             <div className='addcourse-upload-file'>
                                                 <SlCloudUpload />

@@ -6,8 +6,10 @@ import { IoNotificationsOutline } from "react-icons/io5";
 
 
 import img from '../../assest/profile.png'
+import { useNavigate } from 'react-router-dom';
 
 const Navbar = ({ toggleSidebar, text }) => {
+    const navigate = useNavigate()
     return (
         <>
             <div className='navbarcontainer'>
@@ -21,7 +23,7 @@ const Navbar = ({ toggleSidebar, text }) => {
                     <div className='navbarsetting'>
                         <IoNotificationsOutline color='#FE5C73' size={25} />
                     </div>
-                    <div className='navprofile'>
+                    <div className='navprofile' onClick={() => navigate('/profile')}>
                         <img src={img} alt="" />
                     </div>
                 </div>

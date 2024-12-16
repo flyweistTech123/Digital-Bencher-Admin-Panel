@@ -4,6 +4,8 @@ import AboutUs from "../pages/About Us/AboutUs.jsx";
 import Careers from "../pages/Careers/Careers.jsx";
 import AddChapter from "../pages/Chapters/AddChapter.jsx";
 import Chapters from "../pages/Chapters/Chapters.jsx";
+import AddConceptMapping from "../pages/Concept Mapping/AddConceptMapping.jsx";
+import ConceptMapping from "../pages/Concept Mapping/ConceptMapping.jsx";
 import CourseType from "../pages/Course Type/CourseType.jsx";
 import AddCourses from "../pages/Courses/AddCourses.jsx";
 import Courses from "../pages/Courses/Courses.jsx";
@@ -34,6 +36,7 @@ import ForgotPassword from "../pages/Login/ForgotPassword.jsx";
 import Login from "../pages/Login/Login.jsx";
 import OTP from "../pages/Login/OTP.jsx";
 import Setpassword from "../pages/Login/Setpassword.jsx";
+import Profile from "../pages/MyProfile/Profile.jsx";
 import Payments from "../pages/Payments/Payments.jsx";
 import PrivacyPolicy from "../pages/Privacy Policy/PrivacyPolicy.jsx";
 import PracticeQuestions from "../pages/Quiz app/PracticeQuestions.jsx";
@@ -258,7 +261,7 @@ const allRoutes = [
         component: <AddSubject />,
     },
     {
-        route: "/subjects/add-chapter",
+        route: "/chapters/add-chapter",
         component: <AddChapter />,
     },
     {
@@ -368,6 +371,18 @@ const allRoutes = [
     {
         route: "/video-player/video-comments/add-video-comments",
         component: <AddVideoComments />,
+    },
+    {
+        route: "/concept-mapping",
+        component: <ConceptMapping />,
+    },
+    {
+        route: "/concept-mapping/add-concept-mapping",
+        component: <AddConceptMapping />,
+    },
+    {
+        route: "/profile",
+        component: <Profile />,
     },
 ];
 

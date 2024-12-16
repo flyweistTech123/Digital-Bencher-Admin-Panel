@@ -1,5 +1,6 @@
-import React from 'react'
+import React, { useState } from 'react'
 import HOC from '../../components/HOC/HOC'
+import { PriviewNewsModal } from '../../components/Modals/Modals';
 
 import { GoArrowLeft } from "react-icons/go";
 import { FaCircle } from "react-icons/fa";
@@ -22,9 +23,14 @@ import img9 from '../../assest/img9.png'
 
 const DailyNews = () => {
     const navigate = useNavigate()
+    const [show, setShow] = useState(false)
 
     return (
         <>
+            <PriviewNewsModal
+                show={show}
+                onHide={() => setShow(false)}
+            />
             <div className='dashboardcontainer'>
                 <div className='dashboardcontainer-header'>
                     <h6>Daily News</h6>
@@ -257,7 +263,7 @@ const DailyNews = () => {
                     </div>
                     <div className='addhandwritennotes-submit'>
                         <div className='handwritten-button'>
-                            <button onClick={() => navigate('/dashboard/current-affairs')}>Save & Preview</button>
+                            <button onClick={()=>setShow(true)}>Save & Preview</button>
                         </div>
                     </div>
                 </div>

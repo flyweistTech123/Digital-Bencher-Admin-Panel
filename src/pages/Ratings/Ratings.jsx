@@ -8,6 +8,8 @@ import { IoSearch } from "react-icons/io5";
 import { MdArrowOutward } from "react-icons/md";
 import { FiEdit3 } from "react-icons/fi";
 import { AiOutlineDelete } from "react-icons/ai";
+import { IoMdStar } from "react-icons/io";
+import { IoIosStarOutline } from "react-icons/io";
 import Pagination from '../../components/Pagination/Pagination';
 
 
@@ -18,73 +20,80 @@ const Ratings = () => {
             goalexam: "Goal Exam Name",
             subject: "Subject Name",
             chapters: "Chapter 1",
-            ratings: "★★★★☆",
+            rating: 4,
         },
         {
             username: "Chandra Kanth",
             goalexam: "Goal Exam Name",
             subject: "Subject Name",
             chapters: "Chapter 1",
-            ratings: "★★★★☆",
+            rating: 4,
         },
         {
             username: "Chandra Kanth",
             goalexam: "Goal Exam Name",
             subject: "Subject Name",
             chapters: "Chapter 1",
-            ratings: "★★★★☆",
+            rating: 4,
         },
         {
             username: "Chandra Kanth",
             goalexam: "Goal Exam Name",
             subject: "Subject Name",
             chapters: "Chapter 1",
-            ratings: "★★★★☆",
+            rating: 4,
         },
         {
             username: "Chandra Kanth",
             goalexam: "Goal Exam Name",
             subject: "Subject Name",
             chapters: "Chapter 1",
-            ratings: "★★★★☆",
+            rating: 4,
         },
         {
             username: "Chandra Kanth",
             goalexam: "Goal Exam Name",
             subject: "Subject Name",
             chapters: "Chapter 1",
-            ratings: "★★★★☆",
+            rating: 4,
         },
         {
             username: "Chandra Kanth",
             goalexam: "Goal Exam Name",
             subject: "Subject Name",
             chapters: "Chapter 1",
-            ratings: "★★★★☆",
+            rating: 4,
         },
         {
             username: "Chandra Kanth",
             goalexam: "Goal Exam Name",
             subject: "Subject Name",
             chapters: "Chapter 1",
-            ratings: "★★★★☆",
+            rating: 4,
         },
         {
             username: "Chandra Kanth",
             goalexam: "Goal Exam Name",
             subject: "Subject Name",
             chapters: "Chapter 1",
-            ratings: "★★★★☆",
+            rating: 4,
         },
         {
             username: "Chandra Kanth",
             goalexam: "Goal Exam Name",
             subject: "Subject Name",
             chapters: "Chapter 1",
-            ratings: "★★★★☆",
+            rating: 4,
         },
     ];
 
+    const renderStars = (rating) => {
+        const stars = [];
+        for (let i = 0; i < 5; i++) {
+            stars.push(i < rating ? <IoMdStar key={i} /> : <IoIosStarOutline key={i} />);
+        }
+        return <div className="table-star">{stars}</div>;
+    };
     return (
         <>
             <div className='dashboardcontainer'>
@@ -120,7 +129,7 @@ const Ratings = () => {
                                         <td>{data.goalexam}</td>
                                         <td>{data.subject}</td>
                                         <td>{data.chapters}</td>
-                                        <td>{data.ratings}</td>
+                                        <td>{renderStars(data.rating)}</td>
                                         <td>
                                             <div className="handwrittennotes-table-icons">
                                                 <div className="handwrittennotes-icon">

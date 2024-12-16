@@ -9,12 +9,48 @@ import { IoSearch } from "react-icons/io5";
 import { MdArrowOutward } from "react-icons/md";
 import { FiEdit3 } from "react-icons/fi";
 import { AiOutlineDelete } from "react-icons/ai";
+import { IoMdStar } from "react-icons/io";
+import { IoIosStarOutline } from "react-icons/io";
+
 import Pagination from '../../components/Pagination/Pagination';
 
 
 const HandwrittenNotes = () => {
     const navigate = useNavigate()
-
+    const notesData = [
+        {
+            id: 1,
+            notesName: "GATE SCA Digital Logic",
+            toppersName: "Chandra Kanth",
+            pagesCount: "12 pages",
+            subTopicCount: "16 sub topics",
+            rating: 4, // Number of stars (out of 5)
+        },
+        {
+            id: 2,
+            notesName: "GATE SCA Mathematics",
+            toppersName: "Ravi Sharma",
+            pagesCount: "20 pages",
+            subTopicCount: "10 sub topics",
+            rating: 5,
+        },
+        {
+            id: 3,
+            notesName: "GATE SCA Algorithms",
+            toppersName: "Anjali Patel",
+            pagesCount: "15 pages",
+            subTopicCount: "12 sub topics",
+            rating: 3,
+        },
+    ];
+    // Function to render star ratings
+    const renderStars = (rating) => {
+        const stars = [];
+        for (let i = 0; i < 5; i++) {
+            stars.push(i < rating ? <IoMdStar key={i} /> : <IoIosStarOutline key={i} />);
+        }
+        return <div className="table-star">{stars}</div>;
+    };
     return (
         <>
             <div className='dashboardcontainer'>
@@ -42,7 +78,7 @@ const HandwrittenNotes = () => {
                             <p>Image format should be PNG, JPEG or SVG*</p>
                         </div>
                         <div className='handwritten-button-container'>
-                        <div className='handwritten-button'>
+                            <div className='handwritten-button'>
                                 <button>Save</button>
                             </div>
                         </div>
@@ -77,46 +113,28 @@ const HandwrittenNotes = () => {
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr>
-                                    <td>GATE SCA Digital Logic</td>
-                                    <td>Chandra Kanth</td>
-                                    <td>12 pages</td>
-                                    <td>16 sub topics</td>
-                                    <td>★★★★☆</td>
-                                    <td>
-                                        <div className='handwrittennotes-table-icons'>
-                                            <div className='handwrittennotes-icon'>
-                                                <MdArrowOutward />
+                                {notesData.map((note) => (
+                                    <tr key={note.id}>
+                                        <td>{note.notesName}</td>
+                                        <td>{note.toppersName}</td>
+                                        <td>{note.pagesCount}</td>
+                                        <td>{note.subTopicCount}</td>
+                                        <td>{renderStars(note.rating)}</td>
+                                        <td>
+                                            <div className="handwrittennotes-table-icons">
+                                                <div className="handwrittennotes-icon">
+                                                    <MdArrowOutward />
+                                                </div>
+                                                <div className="handwrittennotes-icon">
+                                                    <FiEdit3 />
+                                                </div>
+                                                <div className="handwrittennotes-icon">
+                                                    <AiOutlineDelete />
+                                                </div>
                                             </div>
-                                            <div className='handwrittennotes-icon'>
-                                                <FiEdit3 />
-                                            </div>
-                                            <div className='handwrittennotes-icon'>
-                                                <AiOutlineDelete />
-                                            </div>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>GATE SCA Digital Logic</td>
-                                    <td>Chandra Kanth</td>
-                                    <td>12 pages</td>
-                                    <td>16 sub topics</td>
-                                    <td>★★★★☆</td>
-                                    <td>
-                                        <div className='handwrittennotes-table-icons'>
-                                            <div className='handwrittennotes-icon'>
-                                                <MdArrowOutward />
-                                            </div>
-                                            <div className='handwrittennotes-icon'>
-                                                <FiEdit3 />
-                                            </div>
-                                            <div className='handwrittennotes-icon'>
-                                                <AiOutlineDelete />
-                                            </div>
-                                        </div>
-                                    </td>
-                                </tr>
+                                        </td>
+                                    </tr>
+                                ))}
                             </tbody>
                         </table>
                         <Pagination />

@@ -76,6 +76,9 @@
     transform: translateY(-5px);
 }
 
+.link {
+    text-decoration: none;
+}
 
 .link:hover {
     text-decoration: none;
@@ -389,7 +392,6 @@
     align-items: center;
     justify-content: center;
     gap: 0.5rem;
-    margin-top: 2rem;
 }
 
 .coursepageContent-div h6 {
@@ -503,8 +505,8 @@
     align-items: center;
     gap: 0.5rem;
     width: auto;
-    height: auto;
-    padding: 10px 32px 10px 10px;
+    height: 40px;
+    padding: 0px 32px 0px 10px;
     border-radius: 8px;
     border: 1px solid #608FF7;
     background: #FFFFFF;
@@ -528,8 +530,8 @@
 
 
 .handwrittennotes-search {
-    width: auto;
-    height: auto;
+    width: 320px;
+    height: 40px;
     padding: 12px;
     border-radius: 8px;
     border: 1px solid #CED4DA;
@@ -555,12 +557,15 @@
 
 .handwrittennotes-export {
     width: auto;
-    height: auto;
+    height: 40px;
     padding: 12px;
     border-radius: 8px;
     border: 1px solid #CED4DA;
     background: #FFFFFF;
     cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .handwrittennotes-export span {
@@ -573,8 +578,6 @@
 
 
 .handwrittennotes-list-table {
-    width: auto;
-    height: auto;
     padding: 16px;
     border-radius: 8px;
     background: #FFFFFF;
@@ -593,7 +596,7 @@
     line-height: 20px;
     color: #6C757D;
     margin: 0;
-    padding: 8px 24px;
+    padding: 8px;
     border-right: 1px solid #E9ECEF;
     border-bottom: 1px solid #E9ECEF;
     text-align: left;
@@ -601,7 +604,7 @@
 
 .handwrittennotes-list-table table tbody td {
     min-height: 56px;
-    padding: 8px 48px 8px 24px;
+    padding: 8px;
     border-right: 1px solid #E9ECEF;
     border-bottom: 1px solid #E9ECEF;
     font-weight: 400;
@@ -631,6 +634,17 @@
     align-items: center;
     justify-content: center;
     cursor: pointer;
+}
+
+
+.table-star {
+    display: flex;
+    align-items: center;
+}
+
+.table-star svg {
+    color: #000000;
+    font-size: 17px;
 }
 
 .handwrittennotes-icon svg {
@@ -998,6 +1012,7 @@
     display: flex;
     flex-direction: column;
     gap: 2rem;
+    cursor: pointer;
 }
 
 
@@ -2439,43 +2454,44 @@ input:checked+.slider:before {
     justify-content: center;
 }
 
-.payments-div-right svg{
-    font-size:30px;
+.payments-div-right svg {
+    font-size: 30px;
     color: #8280FF;
 }
 
-.payments-div-right.expenses{
+.payments-div-right.expenses {
     background: #fff6e0;
 }
 
-.payments-div-right.expenses svg{
+.payments-div-right.expenses svg {
     color: #FEC53D;
 }
 
-.payments-div-right.user{
+.payments-div-right.user {
     background: #ffe7de;
 }
 
-.payments-div-right.user svg{
+.payments-div-right.user svg {
     color: #FF9066;
 }
 
 
-.payments-div-bottom{
+.payments-div-bottom {
     display: flex;
     align-items: center;
     gap: 0.5rem;
     margin-top: 1.5rem;
 }
 
-.payments-div-bottom p{
+.payments-div-bottom p {
     font-weight: 600;
     font-size: 16px;
     line-height: 19.36px;
     color: #606060;
     margin: 0;
 }
-.payments-div-bottom span{
+
+.payments-div-bottom span {
     font-weight: 600;
     font-size: 16px;
     line-height: 19.36px;
@@ -2483,22 +2499,22 @@ input:checked+.slider:before {
     margin: 0;
 }
 
-.payments-div-bottom svg{
+.payments-div-bottom svg {
     font-size: 20px;
     color: #00B69B;
 }
 
-.payments-div-bottom.expenses span{
+.payments-div-bottom.expenses span {
     color: #F93C65;
 }
 
-.payments-div-bottom.expenses svg{
+.payments-div-bottom.expenses svg {
     color: #F93C65;
 }
 
 
 
-.testseries-inputs{
+.testseries-inputs {
     width: 50%;
     display: flex;
     flex-direction: column;
@@ -2510,7 +2526,7 @@ input:checked+.slider:before {
     display: flex;
     flex-direction: column;
     gap: 2rem;
- 
+
 }
 
 .testseries-input h6 {
@@ -2528,20 +2544,20 @@ input:checked+.slider:before {
 
 
 
-.testseries-inputs-div{
+.testseries-inputs-div {
     display: flex;
     align-items: center;
     gap: 0.2rem;
 }
 
 
-.testseries-inputs-radio{
+.testseries-inputs-radio {
     display: flex;
     align-items: center;
     gap: 0.2rem;
 }
 
-.testseries-inputs-radio p{
+.testseries-inputs-radio p {
     font-weight: 400;
     font-size: 16px;
     line-height: 12px;
@@ -2553,17 +2569,130 @@ input:checked+.slider:before {
 
 
 
-.addpolls-main{
+.addpolls-main {
     display: flex;
     flex-direction: column;
     gap: 2rem;
 }
 
 
-.addhandwrittennotes-input.question{
+.addhandwrittennotes-input.question {
     width: 40%;
 }
 
 
 
 
+.profile-container {
+    width: 100%;
+    border-radius: 14px;
+    border: 0.3px solid #B9B9B9;
+    background: #FFFFFF;
+    margin-top: 2rem;
+    padding: 1rem;
+}
+
+
+
+.profile-image {
+    width: 86px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    cursor: pointer;
+}
+
+.profile-image p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.0015em;
+    color: #608FF7;
+    margin: 0;
+    text-align: center;
+}
+
+.profile-image-img {
+    width: 86px;
+    height: 86px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.profile-image-img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.profile-main {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.profile-main-input {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+
+
+.profile-main-input label {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    color: #ADADAD;
+    margin: 0;
+}
+
+.profile-main-input input {
+    width: auto;
+    height: 52px;
+    border-radius: 4px;
+    border: 0.6px solid #D5D5D5;
+    background: #F5F6FA;
+    outline: none;
+    padding-left: 0.2rem;
+}
+
+.profile-main-input select {
+    width: auto;
+    height: 52px;
+    border-radius: 4px;
+    border: 0.6px solid #D5D5D5;
+    background: #F5F6FA;
+    outline: none;
+    padding-left: 0.2rem;
+}
+
+
+
+
+
+.profile-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5rem;
+    padding-bottom: 4rem;
+}
+
+.profile-btn button {
+    width: 274px;
+    height: 56px;
+    border-radius: 12px;
+    background: #608FF7;
+    border: none;
+    outline: none;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: -0.06428569555282593px;
+    color: #FFFFFF;
+    margin: 0;
+}

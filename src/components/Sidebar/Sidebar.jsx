@@ -48,7 +48,7 @@ const Sidebar = () => {
         {
             name: "Concept Mapping",
             icon: <BiNetworkChart />,
-            link: "/wallet-management",
+            link: "/concept-mapping",
         },
         {
             name: "Goal Exams",

@@ -1,5 +1,7 @@
 import React, { useState } from 'react'
 import HOC from '../../components/HOC/HOC'
+import { TableModal } from '../../components/Modals/Modals';
+
 
 import { GoArrowLeft } from "react-icons/go";
 import { useNavigate } from 'react-router-dom';
@@ -14,12 +16,18 @@ import { SlCloudUpload } from "react-icons/sl";
 const AddSkill = () => {
     const navigate = useNavigate()
     const [selectedOption, setSelectedOption] = useState("");
+    const [show, setShow] = useState(false)
+
 
     const handleChange = (event) => {
         setSelectedOption(event.target.value);
     };
     return (
         <>
+            <TableModal
+                show={show}
+                onHide={() => setShow(false)}
+            />
             <div className='dashboardcontainer'>
                 <div className='dashboardcontainer-header'>
                     <h6>Skills</h6>
@@ -498,7 +506,7 @@ const AddSkill = () => {
                                         <SlCloudUpload />
                                     </div>
                                 </div>
-                                <div className='addhandwritten-input'>
+                                <div className='addhandwritten-input' onClick={()=>setShow(true)}>
                                     <h6>Final Test</h6>
                                     <div className='addcourse-upload-file'>
                                         <SlCloudUpload />

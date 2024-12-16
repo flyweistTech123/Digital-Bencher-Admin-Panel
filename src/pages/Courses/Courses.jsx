@@ -10,6 +10,8 @@ import { MdArrowOutward } from "react-icons/md";
 import { FiEdit3 } from "react-icons/fi";
 import { AiOutlineDelete } from "react-icons/ai";
 import { GoArrowLeft } from "react-icons/go";
+import { IoMdStar } from "react-icons/io";
+import { IoIosStarOutline } from "react-icons/io";
 
 import Pagination from '../../components/Pagination/Pagination';
 
@@ -23,72 +25,80 @@ const Courses = () => {
             level: "CEFR Level -1 ",
             duration: "22 hrs",
             includecourse: "Includes 69 Courses",
-            rating: "★★★★☆",
+            rating: 4,
         },
         {
             coursename: "UI/UX Design",
             level: "CEFR Level -1 ",
             duration: "22 hrs",
             includecourse: "Includes 69 Courses",
-            rating: "★★★★☆",
+            rating: 4,
         },
         {
             coursename: "UI/UX Design",
             level: "CEFR Level -1 ",
             duration: "22 hrs",
             includecourse: "Includes 69 Courses",
-            rating: "★★★★☆",
+            rating: 4,
         },
         {
             coursename: "UI/UX Design",
             level: "CEFR Level -1 ",
             duration: "22 hrs",
             includecourse: "Includes 69 Courses",
-            rating: "★★★★☆",
+            rating: 4,
         },
         {
             coursename: "UI/UX Design",
             level: "CEFR Level -1 ",
             duration: "22 hrs",
             includecourse: "Includes 69 Courses",
-            rating: "★★★★☆",
+            rating: 4,
         },
         {
             coursename: "UI/UX Design",
             level: "CEFR Level -1 ",
             duration: "22 hrs",
             includecourse: "Includes 69 Courses",
-            rating: "★★★★☆",
+            rating: 4,
         },
         {
             coursename: "UI/UX Design",
             level: "CEFR Level -1 ",
             duration: "22 hrs",
             includecourse: "Includes 69 Courses",
-            rating: "★★★★☆",
+            rating: 4,
         },
         {
             coursename: "UI/UX Design",
             level: "CEFR Level -1 ",
             duration: "22 hrs",
             includecourse: "Includes 69 Courses",
-            rating: "★★★★☆",
+            rating: 4,
         },
         {
             coursename: "UI/UX Design",
             level: "CEFR Level -1 ",
             duration: "22 hrs",
             includecourse: "Includes 69 Courses",
-            rating: "★★★★☆",
+            rating: 4,
         },
         {
             coursename: "UI/UX Design",
             level: "CEFR Level -1 ",
             duration: "22 hrs",
             includecourse: "Includes 69 Courses",
-            rating: "★★★★☆",
+            rating: 4,
         },
     ];
+
+    const renderStars = (rating) => {
+        const stars = [];
+        for (let i = 0; i < 5; i++) {
+            stars.push(i < rating ? <IoMdStar key={i} /> : <IoIosStarOutline key={i} />);
+        }
+        return <div className="table-star">{stars}</div>;
+    };
 
     return (
         <>
@@ -139,7 +149,7 @@ const Courses = () => {
                                         <td>{data.level}</td>
                                         <td>{data.duration}</td>
                                         <td>{data.includecourse}</td>
-                                        <td>{data.rating}</td>
+                                        <td>{renderStars(data.rating)}</td>
                                         <td>
                                             <div className="handwrittennotes-table-icons">
                                                 <div className="handwrittennotes-icon">

@@ -1,5 +1,6 @@
-import React from 'react'
+import React, { useState } from 'react'
 import HOC from '../../components/HOC/HOC'
+import { AddGoalsExamModal } from '../../components/Modals/Modals';
 
 
 import { GoArrowLeft } from "react-icons/go";
@@ -15,10 +16,15 @@ import { AiFillEdit } from "react-icons/ai";
 
 const AddChapter = () => {
     const navigate = useNavigate()
+    const [show, setShow] = useState(false)
 
 
     return (
         <>
+            <AddGoalsExamModal
+                show={show}
+                onHide={() => setShow(false)}
+            />
             <div className='dashboardcontainer'>
                 <div className='dashboardcontainer-header'>
                     <h6>Chapters</h6>
@@ -45,7 +51,7 @@ const AddChapter = () => {
                                             <label htmlFor="">Select Goal Exam</label>
                                         </div>
                                         <div className='addhandwritten-inputs-icons'>
-                                            <AiFillPlusCircle />
+                                            <AiFillPlusCircle onClick={()=>setShow(true)}/>
                                             <MdOutlineRemoveRedEye />
                                             <AiFillEdit />
                                         </div>

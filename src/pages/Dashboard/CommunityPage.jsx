@@ -1,5 +1,7 @@
-import React from 'react'
+import React, { useState } from 'react'
 import HOC from '../../components/HOC/HOC'
+import { CreatePostModal } from '../../components/Modals/Modals';
+
 
 import img from '../../assest/img10.jpg'
 
@@ -11,15 +13,19 @@ import { AiOutlineLike } from "react-icons/ai";
 import { BiComment } from "react-icons/bi";
 import { RxShare1 } from "react-icons/rx";
 import { IoEyeOutline } from "react-icons/io5";
-
 import { BiPin } from "react-icons/bi";
 
 
 const CommunityPage = () => {
     const navigate = useNavigate()
+    const [show, setShow] = useState(false)
 
     return (
         <>
+            <CreatePostModal
+                show={show}
+                onHide={() => setShow(false)}
+            />
             <div className='dashboardcontainer'>
                 <div className='dashboardcontainer-header'>
                     <h6>Community Page Content</h6>
@@ -55,7 +61,7 @@ const CommunityPage = () => {
                         <div className='community-header'>
                             <h6>Posts</h6>
                             <div className='handwritten-button'>
-                                <button>Create Post</button>
+                                <button onClick={()=>setShow(true)}>Create Post</button>
                             </div>
                         </div>
                         <div className='community-main'>

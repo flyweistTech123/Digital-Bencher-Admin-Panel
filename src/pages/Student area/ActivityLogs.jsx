@@ -105,7 +105,7 @@ const ActivityLogs = () => {
                 </div>
                 <div className='handwrittennotes-list'>
                     <div className='handwrittennotes-list-header'>
-                        <Link to={'/dashboard/skills/add-skill'} className='link'>
+                        <Link to={'/vods/add-vod'} className='link'>
                             <div className='handwrittennotes-add'>
                                 <FaPlus />
                                 <h6>Add NEW Activity log</h6>

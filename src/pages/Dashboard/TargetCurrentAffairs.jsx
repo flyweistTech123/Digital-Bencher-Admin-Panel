@@ -1,5 +1,7 @@
-import React from 'react'
+import React, { useState } from 'react'
 import HOC from '../../components/HOC/HOC'
+import { QuestionsUploadedModal } from '../../components/Modals/Modals';
+
 
 import { GoArrowLeft } from "react-icons/go";
 import { AiFillPlusCircle } from "react-icons/ai";
@@ -15,9 +17,15 @@ import { useNavigate } from 'react-router-dom';
 
 const TargetCurrentAffairs = () => {
     const navigate = useNavigate()
+    const [show, setShow] = useState(false)
+
 
     return (
         <>
+            <QuestionsUploadedModal
+                show={show}
+                onHide={() => setShow(false)}
+            />
             <div className='dashboardcontainer'>
                 <div className='dashboardcontainer-header'>
                     <h6>Target Current Affairs</h6>
@@ -102,7 +110,7 @@ const TargetCurrentAffairs = () => {
                     </div>
                     <div className='addhandwritennotes-submit'>
                         <div className='handwritten-button'>
-                            <button onClick={() => navigate('/dashboard/current-affairs')}>Publish</button>
+                            <button onClick={()=>setShow(true)}>Publish</button>
                         </div>
                     </div>
                 </div>

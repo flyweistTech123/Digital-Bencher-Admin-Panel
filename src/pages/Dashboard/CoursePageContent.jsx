@@ -96,6 +96,8 @@ const CoursePageContent = () => {
                             </div>
                         </div>
                     </div>
+                </div>
+                <div className='dashboardmain'>
                     <Link to={'/dashboard/course-page/courses'} className='link'>
                         <div className='coursepageContent-div'>
                             <MdGolfCourse />
